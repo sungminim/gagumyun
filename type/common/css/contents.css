@@ -46,3 +46,7 @@
 .productDetail .moreProduct {padding:20px 15px;}
 .productDetail .moreProduct .moreTit {display:block;width:100%;background:url(../img/layout/ico_arrR_go.svg) no-repeat top 50% right 0;font-weight: 600;}
 .productDetail .moreProduct .product_list {margin-top:0;}
+
+.findID .writeList_v .txtLink_s {margin-top:10px;text-align: right;}
+
+.notiTxt {margin-bottom: 30px;}
