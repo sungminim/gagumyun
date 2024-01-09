@@ -51,5 +51,5 @@
 
 .notiTxt {margin-bottom: 30px;}
 
-.btn_eye {position:absolute;right:20px;top:50%;width:20px;height:20px;margin-top:-10px;background:url(../img/layout/ico_eye_on.svg) no-repeat center;}
-.btn_eye.off {background-image:url(../img/layout/ico_eye_off.svg)}
+.btn_eye {position:absolute;right:20px;top:50%;width:20px;height:20px;margin-top:-10px;background:url(../img/layout/ico_eye_on) no-repeat center;}
+.btn_eye.off {background-image:url(../img/layout/.svg)}

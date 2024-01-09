@@ -271,7 +271,7 @@ input:focus::placeholder {color: transparent !important;}
 .formInput.idNumber .inputWrap span {font-size: 13px;text-align: center;width:20px;}
 .formInput.idNumber .inputWrap>.inputBase {width:calc(50% - 10px)}
 .formInput.idNumber .inputWrap .idNum_last {display:flex;align-items: center;gap:5px;letter-spacing: 3px;width:calc(50% - 10px)}
-.formInput.idNumber .inputWrap .idNum_last .inputBase {width:40px;}
+.formInput.idNumber .inputWrap .idNum_last .inputBase {width:40px;padding:0 5px;text-align: center;}
 
 .formInput.typeTime .inputWrap {position: relative;}
 .formInput.typeTime .inputBase {padding-right: 60px;}
