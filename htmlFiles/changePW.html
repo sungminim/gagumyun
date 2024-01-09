@@ -12,6 +12,7 @@
     <script type="text/javascript" src="../type/common/js/jquery.tmpl.js"></script>
 
 
+
     <!-- jqueryAlert -->
     <link rel="stylesheet" href="../type/common/js/jqueryalert.css"/>
     <script src="../type/common/js/jqueryalert.js"></script>  
@@ -36,8 +37,8 @@
         <!-- { 상품상세 헤더 -->
         <div id="header">
             <div class="header">
-                <h1 class="scHdn">비밀번호찾기</h1>
-                <a href="#none" class="go_prev">비밀번호찾기</a>
+                <h1 class="scHdn">비밀번호 변경</h1>
+                <a href="#none" class="go_prev">비밀번호 변경</a>
             </div>
         </div>
         <!-- 메인용 헤더 } -->
@@ -51,34 +52,55 @@
 
                         <div class="notiTxt">
                             <b class="headLine3">
-                                <span class="c_Point">010-9999-9888</span>에 <br>
-                                인증번호를 보냈어요
+                                새로운 비밀번호를 입력해주세요.
                             </b>
                         </div>
                         <div class="writeList_v">
-                            <ul>
+            
+                            <ul class="listWrap">
                                 <li>
-                                    <div class="formInput typeTime">
-                                        <em class="guide">인증번호</em>
-                                        <div class="inputWrap">
-                                            <input type="text" class="inputBase" title="인증번호를 입력하세요">
-
-                                            <p class="time">
-                                                02:59
-                                            </p>
+                                    <div class="formInput">
+                                        <em class="guide">신규 비밀번호 </em>
+                                        <div class="inputWrap typeEye">
+                                            <input type="text" class="inputBase" title="신규 비밀번호를 입력하세요">
+                                            <button type="button" class="btn_eye off"><span class="txtHidden">비밀번호 끄기</span></button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="formInput">
+                                        <em class="guide">신규 비밀번호 확인</em>
+                                        <div class="inputWrap typeEye">
+                                            <input type="password" class="inputBase" title="신규 비밀번호를 입력하세요">
+                                            <button type="button" class="btn_eye"><span class="txtHidden">비밀번호 보기</span></button>
                                         </div>
                                     </div>
                                 </li>
                             </ul>
-                            <p class="txtLink_s">인증번호 재발송</p>
+                            <script>
+                                // 비밀번호 보기/끄기
+                                $(function(){
+                                    $('.typeEye').each(function(){
+                                        const thisInput = $(this).find('.inputBase');
+                                        const thisBtn = $(this).find('.btn_eye');
+            
+                                        thisBtn.on('click', function () {
+                                            if(thisInput.attr("type") == "password"){
+                                                thisBtn.addClass('off');
+                                                thisBtn.find('span').html('비밀번호 끄기');
+                                                thisInput.attr("type",'text');
+                                            }else{
+                                                thisBtn.removeClass('off');
+                                                thisBtn.find('span').html('비밀번호 보기');
+                                                thisInput.attr("type",'password');
+                                            }
+                                        });
+                                    })
+                                })
+                            </script>
                         </div>
                     </div>
                     
-                    <a href="#none" class="baseBtn"><span>확인</span></a>
-
-                    <script>
-                    	$.alert('내용');
-                    </script>
                 </article>
     
             </div>
