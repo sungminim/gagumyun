@@ -26,7 +26,7 @@
 .productDetail .productInfo .price_before {margin-bottom:-7px;margin-top:5px;color:#b7b7b7;font-size:13px;text-decoration:line-through;}
 .productDetail .productInfo .price {font-size:16px;font-weight:600;margin-right: 5px;}
 .productDetail .productInfo .tagArea {display:flex;gap:5px;margin-top:10px;}
-.productDetail .productInfo .tagArea>p {font-size:12px;padding:2px 7px;text-align: center;border:1px solid #111;border-radius: 5px;}
+.productDetail .productInfo .tagArea>p {font-size:12px;padding:2px 7px;text-align: center;border:1px solid #111;border-radius: 15px;}
 .productDetail .productInfo .btmInfo {margin-top:10px;display:flex;align-items: center;justify-content: space-between;}
 .productDetail .productInfo .btmInfo .cateG {display:flex;align-items: center;}
 .productDetail .productInfo .btmInfo .cateG>p {position:relative;font-size:12px;color:var(--color-gray-lv7);}
@@ -51,5 +51,35 @@
 
 .notiTxt {margin-bottom: 30px;}
 
-.btn_eye {position:absolute;right:20px;top:50%;width:20px;height:20px;margin-top:-10px;background:url(../img/layout/ico_eye_on) no-repeat center;}
-.btn_eye.off {background-image:url(../img/layout/.svg)}
+.btn_eye {position:absolute;right:20px;top:50%;width:20px;height:20px;margin-top:-10px;background:url(../img/layout/ico_eye_on.svg) no-repeat center;}
+.btn_eye.off {background-image:url(../img/layout/ico_eye_off.svg)}
+
+.agreeBox .agreeAll {border: 1px solid var(--color-gray-lv4);padding:15px;margin-bottom: 20px;border-radius: 7px;}
+.agreeBox .agreeList .inputBox {position:relative;display:block;}
+.agreeBox .agreeList .inputBox .txtLink_s {position:absolute;top:50%;transform: translateY(-50%);right:0;}
+.agreeBox .agreeList .inputBox+.inputBox {margin-top:15px;}
+.agreeBox .agreeList .smallAgree {display:flex;gap:20px;padding-left:34px;margin-top:5px;}
+.agreeBox .agreeList .smallAgree .inputBox+.inputBox {margin-top:0;}
+
+.groupCont>.division+.division {margin-top:35px;}
+.groupCont .division .headLine4 {position:relative;display:block;margin-bottom: 15px;}
+.groupCont .division .headLine4 .txtLink_s {position:absolute;right:0;top:50%;transform:translateY(-50%);text-decoration: underline;font-weight: 400;}
+.groupCont .division .txtBody1+.txtBody1 {margin-top:7px;}
+.groupCont .division .txtBody1+.headLine5 {margin-top:15px;}
+.groupCont .division .headLine5+.contTable {margin-top:10px;}
+.groupCont .division .contTable+.headLine5 {margin-top:25px;}
+.groupCont .division .contTable+.txtBody1 {margin-top:25px;}
+
+.totalSch .tagArea {display:flex;gap:10px;flex-wrap: wrap;}
+.totalSch .tagArea>a {border-radius: 30px;padding:5px 15px;text-align: center;background:var(--color-gray-lv2);color:var(--color-gray-lv7)}
+
+.searchWordList>ul {display:flex;flex-wrap: wrap;align-items: center;}
+.searchWordList>ul>li {width:50%;}
+.searchWordList>ul>li:nth-child(n+3) {margin-top:10px}
+.searchWordList>ul>li>a {display:flex;display:flex;align-items: center; }
+.searchWordList>ul>li .num {width:30px;font-weight:700;font-size: 18px;color: var(--color-blue);font-style: italic;}
+
+.alarmList>ul>li {padding-left:65px;background: url(../img/layout/ico_bell.svg) no-repeat left 0 top 0px;}
+.alarmList>ul>li+li {margin-top:20px;}
+.alarmList>ul>li .txtBody2 {display:block;margin-top:3px;font-size:13px;color:var(--color-gray-lv7);}
+.alarmList>ul>li .txtBody1 {line-height: 22px;}

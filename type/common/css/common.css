@@ -84,6 +84,7 @@ caption, caption>strong, caption>p, .scHdn, .txtHidden, legend {position:absolut
 /* Background */
 
 .c_Point {color:var(--color-blue) !important}
+.c_Black {color:#111 !important}
 .bg_White {background:#ffffff !important}
 .bg_Black {background:var(--color-black) !important}
 .bg_Gray1 {background:var(--color-gray-lv1) !important}
@@ -128,7 +129,7 @@ a:focus:not(:focus-visible){
 .headLine5{display:block;width:100%;font-size:16px;font-weight:bold;line-height:22px;letter-spacing:0;}
 
 /* subtxt */
-.txtBody1{display:block;width:100%;font-size:16px;line-height:24px;letter-spacing:0;}
+.txtBody1{display:block;width:100%;font-size:16px;line-height:26px;letter-spacing:0;}
 .txtBody2{display:block;width:100%;font-size:14px;line-height:20px;letter-spacing:0;}
 .txtBody3{display:block;width:100%;font-size:12px;line-height:18px;letter-spacing:0;}
 
@@ -315,19 +316,17 @@ textarea:focus {border:1px solid var(--color-blue);outline:none;}
 .inputBox{position:relative;width:auto;display:inline-block;vertical-align:top;cursor:pointer;}
 .inputBox>input{position:absolute;left:0px;top:3px;width:24px;height:24px;z-index:0;}
 .inputBox>input:focus{width:26px;height:24px;top:3px;left:-1px;}
-.inputBox>.data{position:relative;display:inline-block;min-height:28px;font-size:16px;line-height:21px;color:var(--color-black);padding-left:32px;z-index:1;padding-top:6px;}
-.inputBox>input[type=checkbox] + .data{background:url(../img/common/icon_checkOff.svg) no-repeat left top 3px;background-size: 24px auto;}
-.inputBox>input[type=checkbox]:checked + .data{background:url(../img/common/icon_checkOn.svg) no-repeat left top 3px;background-size: 24px auto;}
-.inputBox>input[type=checkbox]:disabled + .data{background:url(../img/common/icon_checkDis2.png) no-repeat left top 3px;background-size: 24px auto;color:#BEBEBE;}
-.inputBox>input[type=checkbox]:disabled:checked + .data{background:url(../img/common/icon_checkOff.svg) no-repeat left top 3px;background-size: 24px auto;color:#BEBEBE;}
-.inputBox>input[type=checkbox][readonly] + .data{background:url(../img/common/icon_checkDis.svg) no-repeat left top 3px;background-size: 24px auto;color:#BEBEBE;}
+.inputBox>.data{position:relative;display:inline-block;min-height:28px;font-size:16px;line-height:18px;color:var(--color-black);padding-left:32px;z-index:1;padding-top:6px;}
+.inputBox>input[type=checkbox] + .data{background:url(../img/layout/icon_checkOff.svg) no-repeat left top 3px;background-size: 24px auto;}
+.inputBox>input[type=checkbox]:checked + .data{background:url(../img/layout/icon_checkOn.svg) no-repeat left top 3px;background-size: 24px auto;}
+.inputBox>input[type=checkbox]:disabled:checked + .data{background:url(../img/layout/icon_checkOff.svg) no-repeat left top 3px;background-size: 24px auto;color:#BEBEBE;}
 
-.inputBox>input[type=radio] + .data{background:url(../img/common/icon_radioOff.svg) no-repeat left top 3px;background-size: 24px auto;}
-.inputBox>input[type=radio]:checked + .data{background:url(../img/common/icon_radioOn.svg) no-repeat left top 3px;background-size: 24px auto;}
-.inputBox>input[type=radio]:disabled + .data{background:url(../img/common/icon_radioDisabled.svg) no-repeat left top 3px;background-size: 24px auto;color:#BEBEBE;}
-.inputBox>input[type=radio]:disabled:checked + .data{background:url(../img/common/icon_radioDisabled2.png) no-repeat left top 3px;background-size: 24px auto;color:#BEBEBE;}
-.inputBox>input[type=radio][readonly] + .data{background:url(../img/common/icon_radioDisabled2.png) no-repeat left top 3px;background-size: 24px auto;color:#BEBEBE;}
-.inputBox .status {padding-left:34px;font-size:14px;color:#B9B9B9;line-height: 18px;}
+.inputBox.small>.data {padding-left:20px;font-size: 13px;}
+.inputBox.small>input[type=checkbox] + .data{background:url(../img/layout/icon_check_s_Off.svg) no-repeat left top 11px;background-size: 13px auto;}
+.inputBox.small>input[type=checkbox]:checked + .data{background:url(../img/layout/icon_check_s_On.svg) no-repeat left top 11px;background-size: 13px auto;}
+
+.inputBox>input[type=radio] + .data{background:url(../img/layout/icon_radioOff.svg) no-repeat left top 3px;background-size: 24px auto;}
+.inputBox>input[type=radio]:checked + .data{background:url(../img/layout/icon_radioOn.svg) no-repeat left top 3px;background-size: 24px auto;}
 
 .inputBox.round>input + .data{background:url(../img/common/icon_checkRoundOff.svg) no-repeat left top 3px;background-size: 24px auto;}
 .inputBox.round>input:checked + .data{background:url(../img/common/icon_checkRoundOn.svg) no-repeat left top 3px;background-size: 24px auto;}
@@ -363,11 +362,10 @@ textarea:focus {border:1px solid var(--color-blue);outline:none;}
 .date-picker-control:active span {box-shadow: none !important;border-radius: 0;}
 
 
-.noArticle {border-top:1px solid #ddd;padding-top:15px;margin: 70px 0;}
-.noArticle .txtBody1 {color:#777;text-align: center;}
-.headLine2+.noArticle {margin-top:24px;}
-.headLine4+.noArticle {margin-top:40px;}
-.noArticle+.headLine2 {margin-top:48px;}
+.noArticle {padding-top:15px;margin: 70px 0;}
+.noArticle .txtBody1 {color:var(--color-gray-lv8);text-align: center;}
+.noArticle .txtBody1 .c_Black {font-weight: 600;}
+
 
 .noArticleWrap {position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);width: 100%;}
 .noArticle.typeIco {border-top:0;padding-top:0;margin-bottom: 85px;}
@@ -456,15 +454,17 @@ textarea:focus {border:1px solid var(--color-blue);outline:none;}
 .pop_wrap.bottomSheet .popLayout .popConts .popTit {font-size:20px;line-height: 28px;padding:0 15px;padding-bottom: 20px;}
 .pop_wrap.bottomSheet.on .popLayout {animation: openPop 0.2s forwards 0.2s ease-out;}
 
-.pop_wrap.bottomSheet .popInnerCont .optList {border-top: 1px solid var(--color-gray-lv4);}
-.pop_wrap.bottomSheet .popInnerCont .optList>button {display:block;width:100%;padding:15px 15px;font-size:16px;border-bottom: 1px solid var(--color-gray-lv4);text-align: left;}
-
 .pop_wrap.bottomSheet .popLayout.popLayer2 {padding-top: 0;padding-bottom: 0;}
-.bottomSheet .popLayout.popLayer2 .popConts .popInner {padding-left: 0;padding-right: 0;}
 .pop_wrap.bottomSheet .popLayer2 .btn_popX {top: 35px;right: 32px;}
 .popLayout.popLayer2 {height:calc(100vh - 95px);height:calc(100dvh - 95px);}
 .popLayout.popLayer2 .popInner {overflow-y: hidden !important;}
+.bottomSheet .popLayout.popLayer2 .popConts .popInner {padding-left: 0;padding-right: 0;}
 
+.pop_wrap.typeFull {position:fixed;left:0;top:0;padding:0;width:100%;}
+.pop_wrap.typeFull .popLayout {width:100%;height:100%;border-radius: 0;padding:0 0 28px 0;max-width: 100%;}
+.pop_wrap.typeFull .popLayout .popTit {position:fixed;left:0;right:0;display:block;height:55px;display:flex;align-items: center;text-align: center;width:100%;justify-content: center;border-bottom:1px solid #efefef;font-size:18px;font-weight: 700;padding:0;background:#fff;}
+.pop_wrap.typeFull .popLayout .btn_popX {position:fixed;right:auto;left:15px;top:17px;width:20px;height:20px;background:url(../img/layout/ico_pop_close.svg) no-repeat center;z-index: 999;}
+.pop_wrap.typeFull .popLayout .popInnerCont {padding: 80px 15px 0px 15px;}
 /* datepicker */
 input.typeDate {background:#fff url(../img/common/ico_datepicker.svg) no-repeat top 50% right 15px !important;}
 input.typeDate:disabled {pointer-events: none;}
