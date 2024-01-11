@@ -42,7 +42,7 @@ body {position:relative;overflow-x: hidden;}
 
 /* Sub */
 #container {position:relative;max-width: var(--layout-size);width:100%;margin:0 auto;padding-top:56px}
-#contents {padding-bottom:0;}
+#contents {padding-bottom:80px;}
 #contents>article {position:relative;padding:24px 15px 0 15px;min-height: calc(100vh - 55px);}
 
 .typeMain #contents {padding-bottom: 110px;}

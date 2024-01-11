@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimal-ui">
+    <title>가구면</title>
+
+    <script type="text/javascript" src="../type/common/js/jquery-3.5.1.min.js"></script>
+
+
+    <script type="text/javascript" src="../type/common/js/jquery.form.js"></script>
+    <script type="text/javascript" src="../type/common/js/jquery.tmpl.js"></script>
+
+
+
+    <!-- jqueryAlert -->
+    <link rel="stylesheet" href="../type/common/js/jqueryalert.css"/>
+    <script src="../type/common/js/jqueryalert.js"></script>  
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="../type/common/js/swiper/swiper.css"/> <!-- swiper -->
+    <script src="../type/common/js/swiper/swiper.js"></script>  <!-- swiper -->
+
+    <link rel="stylesheet" type="text/css" href="../type/common/css/common.css" /><!-- reset -->
+    <link rel="stylesheet" type="text/css" href="../type/common/css/contents.css" />
+    
+    
+    <script type="text/javascript" src="../type/common/js/layout.js"></script><!-- 공통_layout -->
+    
+    <link rel="stylesheet" type="text/css" href="../type/layout/layout.css" /><!-- layout -->
+    <script type="text/javascript" src="../type/layout/layout.js"></script><!-- layout -->
+</head>
+
+<body> 
+
+    <div class="root typeSub"> <!-- 메인 : typeMain, 서브: typeSub, 상품상세 : typeProductDetail -->
+        <!-- { 상품상세 헤더 -->
+        <div id="header">
+            <div class="header">
+                <h1 class="scHdn">상품등록</h1>
+                <a href="#none" class="go_prev">상품등록</a>
+            </div>
+        </div>
+        <!-- 메인용 헤더 } -->
+    
+        <!-- { 본문 -->
+        <div id="container">
+            <div id="contents">
+                <article>
+    
+                    <div class="productWrite">
+                        <div class="writeList_v">
+                            <ul>
+                                <li>
+                                    <div class="photoArea">
+                                        <ul class="photoList">
+                                            <li>
+                                                <div class="registerArea">
+                                                    <label for="file">
+                                                        <div class="btnUpload">
+                                                            <span class="scHdn">파일 업로드</span>
+                                                            
+                                                            <p class="status">
+                                                                <span><em class="c_Point">0</em>/10</span>
+                                                            </p>
+                                                        </div>
+                                                    </label>
+                                                    <input type="file" name="file" id="file">
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="photo">
+                                                    <img src="../type/common/img/cont/product_thum1.png" alt="">
+
+                                                    <button type="button" class="btnDelete">
+                                                        <span class="scHdn">닫기</span>
+                                                    </button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="photo">
+                                                    <img src="../type/common/img/cont/product_thum2.png" alt="">
+
+                                                    <button type="button" class="btnDelete">
+                                                        <span class="scHdn">닫기</span>
+                                                    </button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="photo">
+                                                    <img src="../type/common/img/cont/product_thum1.png" alt="">
+
+                                                    <button type="button" class="btnDelete">
+                                                        <span class="scHdn">닫기</span>
+                                                    </button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="photo">
+                                                    <img src="../type/common/img/cont/product_thum2.png" alt="">
+
+                                                    <button type="button" class="btnDelete">
+                                                        <span class="scHdn">닫기</span>
+                                                    </button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="photo">
+                                                    <img src="../type/common/img/cont/product_thum1.png" alt="">
+
+                                                    <button type="button" class="btnDelete">
+                                                        <span class="scHdn">닫기</span>
+                                                    </button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="photo">
+                                                    <img src="../type/common/img/cont/product_thum2.png" alt="">
+
+                                                    <button type="button" class="btnDelete">
+                                                        <span class="scHdn">닫기</span>
+                                                    </button>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="formInput">
+                                        <em class="guide">카테고리</em>
+                                        <div class="inputWrap">
+                                            <button type="button" class="inputBase typeGo" title="카테고리를 선택하세요">카테고리 선택</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="formInput">
+                                        <em class="guide">브랜드명</em>
+                                        <div class="inputWrap">
+                                            <input type="text" class="inputBase" title="브랜드명 입력하세요" placeholder="브랜드명">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="formInput">
+                                        <em class="guide">상품명</em>
+                                        <div class="inputWrap">
+                                            <input type="text" class="inputBase" title="상품명 입력하세요" placeholder="상품명"> 
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="formInput">
+                                        <em class="guide">거래방식</em>
+                                        
+                                        <div class="inpBoxRadio">
+                                            <label class="inputBoxBtn">
+                                                <input type="radio" name="number" id="type1" checked="">
+                                                <span>판매하기</span>
+                                            </label>
+                                             
+                                            <label class="inputBoxBtn">
+                                                <input type="radio" name="number" id="type2">
+                                                <span>나눔하기</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="formInput">
+                                        <em class="guide">가격</em>
+                                        <div class="inputWrap">
+                                            <input type="text" class="inputBase" title="가격 입력하세요" placeholder="￦가격">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="formInput">
+                                        <em class="guide">설명</em>
+                                        <div class="inputWrap">
+                                            <textarea name="" id="" cols="30" rows="10" class="inputTextArea" title="설명을 입력하세요"
+                                            placeholder=" - 구매 시기&#13;&#10;- 모델명&#13;&#10;- 제품의 상태 (사용감, 하자 유무 등)&#13;&#10;&#13;&#10;* 가품 및 판매 금지 물품은 게시가 제한될 수 있습니다"></textarea>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </article>
+    
+            </div>
+        </div>
+        <!-- 본문 } -->
+
+        <!-- { 독바 (상세용) -->
+        <aside id="btnDock">
+            <div class="btnArea">
+                <a href="#none" class="baseBtn"><span>등록</span></a>
+            </div>
+        </aside>
+        <!-- 독바 } -->
+
+    </div>
+
+    <!-- Custom Select -->
+	<script id="cutomSelectBoxTemplate" type="text/x-jquery-tmpl">
+		<div class="pop_wrap bottomSheet typeSelect">
+			<section class="popLayout popLayer">
+				<div class="popConts">
+					<div class="popInner limit">
+						<!-- 팝업 내용 입력-->
+						<div class="txtG">
+							<button type="button" class="btn_popX btn_popClose"><span class="base txtHidden">닫기</span></button>
+							<h2 class="popTit"></h2>
+							<div class="popInnerCont selectCont">
+								<!-- 셀렉트 박스 옵션 -->
+								<div class="optList">
+								</div>
+								<!-- 셀렉트 박스 옵션 -->
+							</div>
+						</div>
+						<!-- //팝업 내용 입력 -->
+					</div>
+				</div>
+			</section>
+		</div>
+	</script>
+</body>
+</html>

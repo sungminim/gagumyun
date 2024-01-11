@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimal-ui">
+    <title>가구면</title>
+
+    <script type="text/javascript" src="../type/common/js/jquery-3.5.1.min.js"></script>
+
+
+    <script type="text/javascript" src="../type/common/js/jquery.form.js"></script>
+    <script type="text/javascript" src="../type/common/js/jquery.tmpl.js"></script>
+
+
+
+    <!-- jqueryAlert -->
+    <link rel="stylesheet" href="../type/common/js/jqueryalert.css"/>
+    <script src="../type/common/js/jqueryalert.js"></script>  
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="../type/common/js/swiper/swiper.css"/> <!-- swiper -->
+    <script src="../type/common/js/swiper/swiper.js"></script>  <!-- swiper -->
+
+    <link rel="stylesheet" type="text/css" href="../type/common/css/common.css" /><!-- reset -->
+    <link rel="stylesheet" type="text/css" href="../type/common/css/contents.css" />
+    
+    
+    <script type="text/javascript" src="../type/common/js/layout.js"></script><!-- 공통_layout -->
+    
+    <link rel="stylesheet" type="text/css" href="../type/layout/layout.css" /><!-- layout -->
+    <script type="text/javascript" src="../type/layout/layout.js"></script><!-- layout -->
+</head>
+
+<body> 
+
+    <div class="root typeSub"> <!-- 메인 : typeMain, 서브: typeSub, 상품상세 : typeProductDetail -->
+        <!-- { 상품상세 헤더 -->
+        <div id="header">
+            <div class="header">
+                <h1 class="scHdn">카테고리 선택</h1>
+                <a href="#none" class="go_prev">카테고리 선택</a>
+            </div>
+        </div>
+        <!-- 메인용 헤더 } -->
+    
+        <!-- { 본문 -->
+        <div id="container">
+            <div id="contents">
+                <article>
+    
+                    <div class="categorySelect">
+
+                        <div class="groupCont">
+                            <div class="division">
+                                <b class="headLine4">가구</b>
+
+                                <ul class="settingList">
+                                    <li>
+                                        <label class="inputBox">
+                                            <input type="radio" name="categ" id="categ1">
+                                            <span class="data">침대</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="inputBox">
+                                            <input type="radio" name="categ" id="categ1">
+                                            <span class="data">매트리스·토퍼</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="inputBox">
+                                            <input type="radio" name="categ" id="categ1">
+                                            <span class="data">소파</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="inputBox">
+                                            <input type="radio" name="categ" id="categ1">
+                                            <span class="data">테이블·식탁·책상</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="inputBox">
+                                            <input type="radio" name="categ" id="categ1">
+                                            <span class="data">거실장·TV장</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="inputBox">
+                                            <input type="radio" name="categ" id="categ1">
+                                            <span class="data">서랍·수납장</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="inputBox">
+                                            <input type="radio" name="categ" id="categ1">
+                                            <span class="data">진열장·책장</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="inputBox">
+                                            <input type="radio" name="categ" id="categ1">
+                                            <span class="data">선반</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="inputBox">
+                                            <input type="radio" name="categ" id="categ1">
+                                            <span class="data">행거·옷장</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="inputBox">
+                                            <input type="radio" name="categ" id="categ1">
+                                            <span class="data">의자</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="inputBox">
+                                            <input type="radio" name="categ" id="categ1">
+                                            <span class="data">화장대·콘솔</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="inputBox">
+                                            <input type="radio" name="categ" id="categ1">
+                                            <span class="data">거울</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="inputBox">
+                                            <input type="radio" name="categ" id="categ1">
+                                            <span class="data">가벽·파티션</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="inputBox">
+                                            <input type="radio" name="categ" id="categ1">
+                                            <span class="data">기타</span>
+                                        </label>
+
+                                        <input type="text" class="inputBase" title="기타 사유를 입력하세요" placeholder="기타">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="division">
+                                <b class="headLine4">가전&middot;디지털</b>
+
+                                <ul class="settingList">
+                                    <li>
+                                        <label class="inputBox">
+                                            <input type="radio" name="categ" id="categ1">
+                                            <span class="data">침대</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="inputBox">
+                                            <input type="radio" name="categ" id="categ1">
+                                            <span class="data">매트리스·토퍼</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="inputBox">
+                                            <input type="radio" name="categ" id="categ1">
+                                            <span class="data">소파</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="inputBox">
+                                            <input type="radio" name="categ" id="categ1">
+                                            <span class="data">테이블·식탁·책상</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="inputBox">
+                                            <input type="radio" name="categ" id="categ1">
+                                            <span class="data">거실장·TV장</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="inputBox">
+                                            <input type="radio" name="categ" id="categ1">
+                                            <span class="data">서랍·수납장</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="inputBox">
+                                            <input type="radio" name="categ" id="categ1">
+                                            <span class="data">진열장·책장</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="inputBox">
+                                            <input type="radio" name="categ" id="categ1">
+                                            <span class="data">선반</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="inputBox">
+                                            <input type="radio" name="categ" id="categ1">
+                                            <span class="data">행거·옷장</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="inputBox">
+                                            <input type="radio" name="categ" id="categ1">
+                                            <span class="data">의자</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="inputBox">
+                                            <input type="radio" name="categ" id="categ1">
+                                            <span class="data">화장대·콘솔</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="inputBox">
+                                            <input type="radio" name="categ" id="categ1">
+                                            <span class="data">거울</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="inputBox">
+                                            <input type="radio" name="categ" id="categ1">
+                                            <span class="data">가벽·파티션</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="inputBox">
+                                            <input type="radio" name="categ" id="categ1">
+                                            <span class="data">기타</span>
+                                        </label>
+
+                                        <input type="text" class="inputBase" title="기타 사유를 입력하세요" placeholder="기타">
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                       
+                    </div>
+                    
+                </article>
+    
+            </div>
+        </div>
+        <!-- 본문 } -->
+
+        <!-- { 독바 (상세용) -->
+        <aside id="btnDock">
+            <div class="btnArea">
+                <a href="#none" class="baseBtn"><span>등록</span></a>
+            </div>
+        </aside>
+        <!-- 독바 } -->
+    
+    </div>
+
+    <!-- Custom Select -->
+	<script id="cutomSelectBoxTemplate" type="text/x-jquery-tmpl">
+		<div class="pop_wrap bottomSheet typeSelect">
+			<section class="popLayout popLayer">
+				<div class="popConts">
+					<div class="popInner limit">
+						<!-- 팝업 내용 입력-->
+						<div class="txtG">
+							<button type="button" class="btn_popX btn_popClose"><span class="base txtHidden">닫기</span></button>
+							<h2 class="popTit"></h2>
+							<div class="popInnerCont selectCont">
+								<!-- 셀렉트 박스 옵션 -->
+								<div class="optList">
+								</div>
+								<!-- 셀렉트 박스 옵션 -->
+							</div>
+						</div>
+						<!-- //팝업 내용 입력 -->
+					</div>
+				</div>
+			</section>
+		</div>
+	</script>
+</body>
+</html>
