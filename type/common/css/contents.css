@@ -112,3 +112,14 @@
 
 .categorySelect .inputBox+.inputBase {margin-top:15px;}
 .categorySelect .settingList>li:last-child:after {display:none;}
+
+.talkList>li+li {margin-top:20px}
+.talkList>li>a {display:flex;align-items: center;}
+.talkList>li>a .productThum {position:relative;width:50px;height:50px;border-radius: 10px;font-size: 0;overflow: hidden;}
+.talkList>li>a .productThum img {position:absolute;width:100%;height:100%;object-fit: cover;}
+.talkList>li>a .profile {position:relative;width:60px;height:60px;border-radius: 10px;font-size: 0;margin-right: 10px;border-radius: 50%;overflow: hidden;}
+.talkList>li>a .profile img {position:absolute;width:100%;height:100%;object-fit: cover;}
+.talkList>li>a .info {width:calc(100% - 130px);margin-right: 10px;}
+.talkList>li>a .time {font-size: 12px;color:var(--color-gray-lv6);}
+.talkList>li>a .name {display:block;font-weight: 600;margin-top: -3px;}
+.talkList>li>a .txt {font-size: 13px;white-space: pre;overflow: hidden;text-overflow: ellipsis;width:calc(100% - 10px);}
