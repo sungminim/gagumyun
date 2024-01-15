@@ -122,4 +122,48 @@
 .talkList>li>a .info {width:calc(100% - 130px);margin-right: 10px;}
 .talkList>li>a .time {font-size: 12px;color:var(--color-gray-lv6);}
 .talkList>li>a .name {display:block;font-weight: 600;margin-top: -3px;}
-.talkList>li>a .txt {font-size: 13px;white-space: pre;overflow: hidden;text-overflow: ellipsis;width:calc(100% - 10px);}
+.talkList>li>a .txt {font-size: 13px;white-space: pre;overflow: hidden;text-overflow: ellipsis;width:calc(100% - 10px);color:var(--color-gray-lv8);}
+
+#popUtil .settingList {padding:0px 0 0 0;}
+#popUtil .settingList>li {padding:20px 0}
+#popUtil .settingList>li:last-child:after {display:none;}
+
+.talkDetail .productInfo {position:relative;padding: 0 0 20px 0;display:flex;}
+.talkDetail .productInfo:before {content:'';display:block;width:calc(100% + 30px);height:1px;background:var(--color-gray-lv4);position:absolute;left:-15px;bottom:0;}
+
+.talkDetail .productInfo .thumnail {position:relative;width:60px;height:60px;margin-bottom:6px;border-radius: 10px;overflow: hidden;border: 1px solid #dfdfdf;font-size:0;overflow: hidden;margin-right: 10px;}
+.talkDetail .productInfo .thumnail>img {position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:100%;height:100%;max-width:unset;object-fit: cover;transition:.6s transform, .6s filter}
+.talkDetail .productInfo .info {flex:1;}
+.talkDetail .productInfo .info .baseBtn.small {width:100px;margin-top:5px;}
+.talkDetail .productInfo .made {color:#555;font-size:12px;margin-bottom:0px;}
+.talkDetail .productInfo .tit {font-weight: 600;line-height: 18px;}
+.talkDetail .productInfo .priceArea {display:flex;margin-top:3px;}
+.talkDetail .productInfo .priceArea .rate {color:#2168F5;font-size:15px;font-weight: 600;}
+.talkDetail .productInfo .price_before {margin-bottom:-7px;margin-top:2px;color:#b7b7b7;font-size:12px;text-decoration:line-through;}
+.talkDetail .productInfo .price {font-size:15px;font-weight:600;margin-right: 5px;}
+
+
+#chatDock {display:flex;align-items: center;}
+#chatDock .fileImg {position:relative;width:25px;height:25px;}
+#chatDock .fileImg .btnUpload {position:absolute;width: 100%;height: 100%;cursor: pointer;background: url(../img/layout/ico_fileImg.svg) no-repeat center}
+#chatDock .fileImg .btnUpload .status {text-align: center;font-size: 13px;display: block;padding-top:35px;}
+#chatDock .fileImg #file {display: none;}
+#chatDock .inpArea {flex:1;margin:0 10px}
+#chatDock .inpArea input {width:100%;height:35px;border-radius: 25px;background:var(--color-gray-lv4);color:var(--color-gray-lv8);font-weight: 600;padding:15px;border:0;}
+#chatDock .inpArea input::placeholder {color:var(--color-gray-lv8);} 
+#chatDock .btnSend {display:block;width:25px;height:25px;background:url(../img/layout/ico_send.svg) no-repeat center;position: relative}
+
+.chatArea {padding-top:30px;}
+.chatArea .msgContainer {display:flex;flex-direction: column;}
+.chatArea .date {text-align: center;font-size: 13px;color:var(--color-gray-lv8);margin-bottom: 20px;}
+.chatArea .msg {display:flex;width:100%;gap: 5px;align-items: end;}
+.chatArea .msg+.msg {margin-top:25px;}
+.chatArea .msg.sent+.msg.sent {margin-top:10px;}
+.chatArea .msg.received+.msg.received {margin-top:10px;}
+.chatArea .msg.sent {justify-content: end;flex-direction: row-reverse;}
+.chatArea .msg.sent .chat {background:#2168F5;color:#fff;}
+.chatArea .msg .chat {padding:5px 15px;border-radius: 20px;background:var(--color-gray-lv3);max-width: 75%;display:flex;align-items: center;}
+.chatArea .msg .info span {display:block;font-size: 12px;color:var(--color-gray-lv8);}
+.chatArea .msg .msgImg {font-size: 0;padding:5px 0;}
+.chatArea .msg .msgImg img {max-width: 100px;}
+.chatArea .date:nth-of-type(n+2) {margin-top:30px;}
