@@ -131,16 +131,16 @@
 .talkDetail .productInfo {position:relative;padding: 0 0 20px 0;display:flex;}
 .talkDetail .productInfo:before {content:'';display:block;width:calc(100% + 30px);height:1px;background:var(--color-gray-lv4);position:absolute;left:-15px;bottom:0;}
 
-.talkDetail .productInfo .thumnail {position:relative;width:60px;height:60px;margin-bottom:6px;border-radius: 10px;overflow: hidden;border: 1px solid #dfdfdf;font-size:0;overflow: hidden;margin-right: 10px;}
-.talkDetail .productInfo .thumnail>img {position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:100%;height:100%;max-width:unset;object-fit: cover;transition:.6s transform, .6s filter}
-.talkDetail .productInfo .info {flex:1;}
-.talkDetail .productInfo .info .baseBtn.small {width:100px;margin-top:5px;}
-.talkDetail .productInfo .made {color:#555;font-size:12px;margin-bottom:0px;}
-.talkDetail .productInfo .tit {font-weight: 600;line-height: 18px;}
-.talkDetail .productInfo .priceArea {display:flex;margin-top:3px;}
-.talkDetail .productInfo .priceArea .rate {color:#2168F5;font-size:15px;font-weight: 600;}
-.talkDetail .productInfo .price_before {margin-bottom:-7px;margin-top:2px;color:#b7b7b7;font-size:12px;text-decoration:line-through;}
-.talkDetail .productInfo .price {font-size:15px;font-weight:600;margin-right: 5px;}
+.productInfo .thumnail {position:relative;width:60px;height:60px;margin-bottom:6px;border-radius: 10px;overflow: hidden;border: 1px solid #dfdfdf;font-size:0;overflow: hidden;margin-right: 10px;}
+.productInfo .thumnail>img {position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:100%;height:100%;max-width:unset;object-fit: cover;transition:.6s transform, .6s filter}
+.productInfo .info {flex:1;}
+.productInfo .info .baseBtn.small {width:100px;margin-top:5px;}
+.productInfo .made {color:#555;font-size:12px;margin-bottom:0px;}
+.productInfo .tit {font-weight: 600;line-height: 18px;}
+.productInfo .priceArea {display:flex;margin-top:3px;}
+.productInfo .priceArea .rate {color:#2168F5;font-size:15px;font-weight: 600;}
+.productInfo .price_before {margin-bottom:-7px;margin-top:2px;color:#b7b7b7;font-size:12px;text-decoration:line-through;}
+.productInfo .price {font-size:15px;font-weight:600;margin-right: 5px;}
 
 
 #chatDock {display:flex;align-items: center;}
@@ -167,3 +167,19 @@
 .chatArea .msg .msgImg {font-size: 0;padding:5px 0;}
 .chatArea .msg .msgImg img {max-width: 100px;}
 .chatArea .date:nth-of-type(n+2) {margin-top:30px;}
+
+.deliveryWrite {padding-bottom: 150px;}
+.deliveryWrite .productInfo .thumnail {width:70px;height:70px;}
+.deliveryWrite .groupCont>.division {position:relative;}
+.deliveryWrite .groupCont>.division+.division {padding-top:35px;}
+.deliveryWrite .groupCont>.division+.division:before {content:'';display:block;width:calc(100% + 30px);height:1px;background:var(--color-gray-lv4);position:absolute;left:-15px;top:0;}
+.productInfo {display:flex;}
+.productInfo .info {flex:1;}
+.deliveryWrite .paymentArea  .payment {display:flex;justify-content: space-between;align-items: center;}
+.deliveryWrite .paymentArea  .payment+.payment {margin-top:10px;}
+
+input[type='date']::before {content: attr(data-placeholder);width: 100%;color: #C8C8C8;}
+input[type='date']:focus::before,
+input[type='date']:valid::before {display: none;}
+
+.btn_help {position:relative;display:inline-block;width:17px;height:17px;vertical-align: middle;background:url(../img/layout/ico_help.svg) no-repeat center;margin:0 3px;}

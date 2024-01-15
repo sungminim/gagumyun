@@ -29,7 +29,6 @@ var ui = {
 		ui.duetdatePick.init();
 		ui.popPage.init();
 		ui.field();
-		
 		ui.accessibility.GNB();
 	},
 	select : {
@@ -109,7 +108,7 @@ var ui = {
 	},
 	btnSet : {
 		init: function() {
-			// ÇÏ´Ü °íÁ¤ ¹öÆ°
+			// ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Æ°
 			$("body *").each(function (e) {
 				if ($(this).hasClass("stickyBtm_wrap")) {
 					$(this).find('.stickyCont').each(function(e){
@@ -130,7 +129,7 @@ var ui = {
 
 						var nextSibling = $(".stickyBtm_wrap").next(':visible');
 
-						// ´ÙÀ½ ÇüÁ¦ ¿ä¼Ò°¡ Á¸ÀçÇÏ´ÂÁö È®ÀÎ
+						// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ò°ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ï¿½ï¿½ È®ï¿½ï¿½
 						if (nextSibling.length > 0) {
 							$('.stickyBtm_wrap').addClass('middleBtn')
 							$('.stickyBtm_wrap').css('height','')
@@ -257,34 +256,21 @@ var ui = {
     				// picker.maxDate = new Date("+10Y");
 
 					picker.localization = {
-						buttonLabel: "³¯Â¥ ¼±ÅÃ",
-						selectedDateMessage: "¼±ÅÃÇÑ ³¯Â¥´Â",
-						prevMonthLabel: "ÀÌÀü ´Þ",
-						nextMonthLabel: "´ÙÀ½ ´Þ",
-						monthSelectLabel: "´Þ",
-						yearSelectLabel: "³â",
-						closeLabel: "Ã¢ ´Ý±â",
-						keyboardInstruction: "È­»ìÇ¥ Å°¸¦ »ç¿ëÇÏ¿© ³¯Â¥¸¦ Å½»ö ÇÒ ¼ö ÀÖ½À´Ï´Ù.",
-						calendarHeading: "³¯Â¥ ¼±ÅÃ",
-						dayNames: ["Åä", "ÀÏ", "¿ù", "È­", "¼ö", "¸ñ", "±Ý"],
+						buttonLabel: "ï¿½ï¿½Â¥ ï¿½ï¿½ï¿½ï¿½",
+						selectedDateMessage: "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Â¥ï¿½ï¿½",
+						prevMonthLabel: "ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½",
+						nextMonthLabel: "ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½",
+						monthSelectLabel: "ï¿½ï¿½",
+						yearSelectLabel: "ï¿½ï¿½",
+						closeLabel: "Ã¢ ï¿½Ý±ï¿½",
+						keyboardInstruction: "È­ï¿½ï¿½Ç¥ Å°ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï¿ï¿½ ï¿½ï¿½Â¥ï¿½ï¿½ Å½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ ï¿½Ö½ï¿½ï¿½Ï´ï¿½.",
+						calendarHeading: "ï¿½ï¿½Â¥ ï¿½ï¿½ï¿½ï¿½",
+						dayNames: ["ï¿½ï¿½", "ï¿½ï¿½", "ï¿½ï¿½", "È­", "ï¿½ï¿½", "ï¿½ï¿½", "ï¿½ï¿½"],
 						monthNames: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"],
 						monthNamesShort: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"],
 						// yearSelectOptions: generateYearOptions(new Date("-30Y").getFullYear(), new Date("+30Y").getFullYear())
 					};
 					
-					// document.addEventListener('duetOpen', function () {
-					// 	var dim = document.createElement('div');
-					// 	dim.classList.add('datepicker-layer');
-
-					// 	document.body.appendChild(dim);
-					// 	ui.lockBody.lock();
-					// });
-
-					// document.addEventListener('duetClose', function () {
-					// 	$('.datepicker-layer').remove();
-					// 	ui.lockBody.unlock();
-					// });
-
 					document.addEventListener('DOMContentLoaded', function() {
 						const datePickers = document.querySelectorAll(".duet-date-picker");
 					
@@ -297,14 +283,6 @@ var ui = {
 						}
 					});
 
-					// function generateYearOptions(minYear, maxYear) {
-					// 	const options = [];
-					// 	for (let year = maxYear; year >= minYear; year--) {
-					// 		options.push(year.toString());
-					// 	}
-					// 	return options;
-					// }
-				}
 			};
 
 			datePickerInternationalization();
@@ -325,6 +303,7 @@ var ui = {
 				ui.lockBody.unlock();
 			});
 		}
+	}
 	},
 	Accordion: {
 		init: function () {
@@ -332,7 +311,7 @@ var ui = {
 				var accordionItem = $(this);
 				var accordionBtn = accordionItem.find(".AccordionBtn");
 				if (accordionItem.hasClass("on")) {
-					accordionBtn.attr({ "aria-expanded": true, "title": "È®ÀåµÊ" });
+					accordionBtn.attr({ "aria-expanded": true, "title": "È®ï¿½ï¿½ï¿½" });
 				} else {
 					accordionBtn.attr("aria-expanded", false).removeAttr("title");
 				}
@@ -348,7 +327,7 @@ var ui = {
 				$(target).parents("li").find(".AccordionBtn").removeAttr("title").attr("aria-expanded", false);
 			} else {
 				$(target).parents("li").addClass("on").find(".AccordionCont").slideDown(300);
-				$(target).parents("li").find(".AccordionBtn").attr({ "aria-expanded": true, "title": "È®ÀåµÊ" });
+				$(target).parents("li").find(".AccordionBtn").attr({ "aria-expanded": true, "title": "È®ï¿½ï¿½ï¿½" });
 	
 				ui.touchDim();
 			}
@@ -364,7 +343,7 @@ var ui = {
 				ui.LayerPop.Show(popTarget, popSize);
 			});
 
-			// ½º³¼¹Ù
+			// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 			$(document).on('click', '.openSnack', function () {
 				var selectedTarget = $(this).attr("data-LYID");
 				var snTarget = $('#' + selectedTarget);
@@ -382,7 +361,7 @@ var ui = {
 				}
 			});
 
-			// ÅøÆÁ
+			// ï¿½ï¿½ï¿½ï¿½
 			$(document).on('click', '.openTooltip', function () {
 				var selectedTarget = $(this).attr("data-LYID");
 				var tipTarget = $('#' + selectedTarget);
@@ -431,47 +410,47 @@ var ui = {
 			lockPopLayout();
 		},
 		Show : function(PopID, PopSize, open_callbackfcn, open_Pram, closed_callbackfcn, closed_Pram){
-			//´Ý±â ½ÇÇà½Ã Æ÷Ä¿½º ¸®ÅÏ°ª ¼ÂÆÃ
+			//ï¿½Ý±ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ä¿ï¿½ï¿½ ï¿½ï¿½ï¿½Ï°ï¿½ ï¿½ï¿½ï¿½ï¿½
 			//console.log(event);
 			if(event != undefined){
 				$(event.currentTarget).attr("data-retrunFocus","Y");
 			}
 
-			//ÆË¾÷½ÇÇà
+			//ï¿½Ë¾ï¿½ï¿½ï¿½ï¿½ï¿½
 			$(PopID).find(".popLayout").css("max-width", PopSize + "px");
 			$(PopID).addClass('on');
 			ui.lockBody.lock();
 
 			ui.LayerPop.centerAlign(PopID);
 
-			// ÆË¾÷ µÎ°³ ÀÌ»óÀÏ¶§ ¼³Á¤
+			// ï¿½Ë¾ï¿½ ï¿½Î°ï¿½ ï¿½Ì»ï¿½ï¿½Ï¶ï¿½ ï¿½ï¿½ï¿½ï¿½
 			// var onElements = $('.pop_wrap.bottomSheet.on');
 			// if (onElements.length >= 2) {
 
 			// 	onElements.not(':first').css('background-color', 'rgba(0,0,0,0)');
 			// }
 
-			//ÆË¾÷ ³ôÀÌ ÃÖ´ë°ª ¼³Á¤
+			//ï¿½Ë¾ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ö´ë°ª ï¿½ï¿½ï¿½ï¿½
 			ui.LayerPop.MaxHeight(PopID);
 
-			//Ã¹»·Àç, ¸¶Áö¸· Å¸°Ù ¼ÂÆÃ½Ã ¿¹¿Ü»óÅÂ Ãß°¡
+			//Ã¹ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Å¸ï¿½ï¿½ ï¿½ï¿½ï¿½Ã½ï¿½ ï¿½ï¿½ï¿½Ü»ï¿½ï¿½ï¿½ ï¿½ß°ï¿½
 			var TargetState = "[data-hidden=hidden], [style*='display:none'], [style*='display: none'], [style*='display :none'], [style*='display : none']";
 
-			//Ã¹¹øÂ°, ¸¶Áö¸· Æ÷Ä¿½º ¼ÂÆÃ Àü css·Î display:none Ã³¸® µÇ¾îÀÖ´Â Å¸°Ù ºÐ¸®
+			//Ã¹ï¿½ï¿½Â°, ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ä¿ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ cssï¿½ï¿½ display:none Ã³ï¿½ï¿½ ï¿½Ç¾ï¿½ï¿½Ö´ï¿½ Å¸ï¿½ï¿½ ï¿½Ð¸ï¿½
 			$(PopID).find("a, button, input, select").not(TargetState).each(function(e){
 				if($(this).is(":visible") == false){
 					$(this).attr("data-hidden","hidden");
 				}
 			});
 			
-			//ÆË¾÷ ³»¿¡ Ã¹¹øÂ°, ¸¶Áö¸· Å¸°Ù ÁöÁ¤
+			//ï¿½Ë¾ï¿½ ï¿½ï¿½ï¿½ï¿½ Ã¹ï¿½ï¿½Â°, ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Å¸ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 			$(PopID).find("a, button, input, select").not(TargetState).first().attr("data-pop-focus","first");
 			$(PopID).find("a, button, input, select").not(TargetState).last().attr("data-pop-focus","last");
 			
-			//ÆË¾÷µÚ Æ÷Ä¿½º ÀÌµ¿ÇÒ °´Á¦°¡ ÇÏ³ªµµ ¾øÀ»°æ¿ì ºê¶ó¿ìÀú ¹ÛÀ¸·Î Æ÷Ä¿½º ÀÌÅ» ¹æÁö¸¦ À§ÇÑ È÷µç¿µ¿ª
+			//ï¿½Ë¾ï¿½ï¿½ï¿½ ï¿½ï¿½Ä¿ï¿½ï¿½ ï¿½Ìµï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ï³ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ä¿ï¿½ï¿½ ï¿½ï¿½Å» ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ç¿µï¿½ï¿½
 			$(PopID).append("<div class='focuseouthidden' tabindex='0'></div>");
 
-			//ÆË¾÷³» ¹öÆ°ÀÌ ¾øÀ»°æ¿ì ÆË¾÷¿µ¿ªÀ» Ã¹¹øÂ° Æ÷Ä¿½º·Î ÀâÀ½
+			//ï¿½Ë¾ï¿½ï¿½ï¿½ ï¿½ï¿½Æ°ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ë¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ã¹ï¿½ï¿½Â° ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 			if($(PopID).find("a, button, input, select").length == 1){
 				$(PopID).find(".popLayout").attr({"tabindex" : "0", "data-pop-focus":"first"});	
 			}
@@ -483,7 +462,7 @@ var ui = {
 				"data-hidden" : "hidden"
 			});
 			
-			//html ±íÀÌ ±¸ÇØ¼­ aria-hidden Ã³¸® »èÁ¦
+			//html ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ø¼ï¿½ aria-hidden Ã³ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 			var targetHtml = $(PopID);
 			var endClass = targetHtml.parent().prop('tagName');
 			
@@ -503,12 +482,12 @@ var ui = {
 				}
 			}
 
-			//¿ÀÇÂ ÄÝ¹é
+			//ï¿½ï¿½ï¿½ï¿½ ï¿½Ý¹ï¿½
 			if(open_callbackfcn != undefined){
 				eval(open_callbackfcn)(open_Pram);
 			}
 
-			//ÆË¾÷ ´Ý±â
+			//ï¿½Ë¾ï¿½ ï¿½Ý±ï¿½
 			// $(PopID).find('.btn_popClose').on("click",function(e){
 			// 	ui.LayerPop.Closed(PopID, closed_callbackfcn, closed_Pram);
 			// });
@@ -517,7 +496,7 @@ var ui = {
 			});
 			
 
-			//Á¢±Ù¼º : Ã¹¹øÂ°ÅÇ¿¡¼­ shift + tab °æ¿ì ¸¶Áö¸·¹öÆ°À¸·Î (ÆË¾÷³» Æ÷Ä¿½º ·çÇÁ)
+			//ï¿½ï¿½ï¿½Ù¼ï¿½ : Ã¹ï¿½ï¿½Â°ï¿½Ç¿ï¿½ï¿½ï¿½ shift + tab ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ°ï¿½ï¿½ï¿½ï¿½ (ï¿½Ë¾ï¿½ï¿½ï¿½ ï¿½ï¿½Ä¿ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½)
 			$(PopID).find("[data-pop-focus=first]").on("keydown", function(e){
 				if(e.shiftKey == true && e.which == 9){
 					$(PopID).find("[data-pop-focus=last]").focus();
@@ -525,7 +504,7 @@ var ui = {
 				}
 			});
 			
-			//Á¢±Ù¼º : ¸¶Áö¸·ÅÇ¿¡¼­ tab °æ¿ì Ã¹¹øÂ° ¹öÆ° (ÆË¾÷³» Æ÷Ä¿½º ·çÇÁ)
+			//ï¿½ï¿½ï¿½Ù¼ï¿½ : ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç¿ï¿½ï¿½ï¿½ tab ï¿½ï¿½ï¿½ Ã¹ï¿½ï¿½Â° ï¿½ï¿½Æ° (ï¿½Ë¾ï¿½ï¿½ï¿½ ï¿½ï¿½Ä¿ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½)
 			$(PopID).find("[data-pop-focus=last]").on("keydown", function(e){
 				if(e.shiftKey == false && e.which == 9){
 					$(PopID).find("[data-pop-focus=first]").focus();
@@ -533,7 +512,7 @@ var ui = {
 				}
 			});
 
-			// BottomSheet ÆË¾÷ ¿µ¿ª Á¦¿ÜÇÑ ¿µ¿ª Å¬¸¯ ½Ã ´Ý±â
+			// BottomSheet ï¿½Ë¾ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ Å¬ï¿½ï¿½ ï¿½ï¿½ ï¿½Ý±ï¿½
 			$(document).on('click', PopID + '.bottomSheet', function () {
 				if (event.target === this) {
 					ui.LayerPop.Closed(PopID, closed_callbackfcn, closed_Pram);
@@ -557,7 +536,7 @@ var ui = {
 			
 
 
-			// BottomSheet ½ºÅ©·Ñ ±æ °æ¿ì ½ºÅ©·Ñ Ã³¸®
+			// BottomSheet ï¿½ï¿½Å©ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½Å©ï¿½ï¿½ Ã³ï¿½ï¿½
 			if($(PopID).hasClass('bottomSheet')){
 				// $(PopID).find("h2").attr({ "tabindex": "0", "data-pop-focus": "first" });
 
@@ -641,7 +620,7 @@ var ui = {
 			
 			lockPopLayout();
 
-			//¾ÆÀÌÇÁ·¹ÀÓÃ¼Å©
+			//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¼Å©
 			if ( self !== top ) {
 				$("[data-retrunFocus=Y]", parent.document).focus().removeAttr("data-retrunFocus");
 				$($(PopID).attr("data-iframeid"), parent.document).removeClass("on").remove();
@@ -653,7 +632,7 @@ var ui = {
 			$(".pop_wrap.addHtmlPop").remove();
 			$(".pop_wrap .scroll-gradient").remove();
 			
-			/* ´Ý±â ÄÝ¹é */
+			/* ï¿½Ý±ï¿½ ï¿½Ý¹ï¿½ */
 			if(closed_callbackfcn != undefined){
 				eval(closed_callbackfcn)(closed_Pram);
 			}
@@ -661,12 +640,12 @@ var ui = {
 		MaxHeight : function(PopID){
 			var bottomHeight = $(PopID).find(".popBtnArea").innerHeight();
 			if(bottomHeight == undefined){bottomHeight = 0}
-			//ÆË¾÷ ³ôÀÌ ÃÖ´ë°ª ¼³Á¤
+			//ï¿½Ë¾ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ö´ë°ª ï¿½ï¿½ï¿½ï¿½
 			// $(PopID).find(".popLayout").css({
 			// 	"max-height": $(window).height() - bottomHeight
 			// });
 			//console.log(bottomHeight);
-			//¸®»çÀÌÁî ÆË¾÷ ³ôÀÌ ÃÖ´ë°ª ¼³Á¤
+			//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ë¾ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ö´ë°ª ï¿½ï¿½ï¿½ï¿½
 			// $(window).bind('resize load', function () {
 			// 	$(PopID).find(".popLayout").css({
 			// 		"max-height": $(window).height() - bottomHeight
@@ -674,14 +653,14 @@ var ui = {
 			// });
 		},
 		centerAlign : function(PopID){
-			//ÆË¾÷ ¼¾ÅÍÁ¤·Ä(transform Á¤·ÄÇÒ°æ¿ì Èå¸´ÇÏ°Ô ³ª¿À´Â ÄÉÀÌ½º ¹ß»ý)
+			//ï¿½Ë¾ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(transform ï¿½ï¿½ï¿½ï¿½ï¿½Ò°ï¿½ï¿½ ï¿½å¸´ï¿½Ï°ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ì½ï¿½ ï¿½ß»ï¿½)
 			setTimeout(function(){
 				$(PopID).find(".popLayout").css({
 					"opacity" : "1"
 				});
 			},100)
 		
-			//¸®»çÀÌÁî
+			//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 			$(window).bind('resize load', function () {
 				$(PopID).find(".popLayout").css({
 				})
@@ -697,7 +676,7 @@ var ui = {
 			PopHtml += '			<div class="popInner limit">';
 			PopHtml += $(conthtml).html();
 			PopHtml += '			</div>';
-			// PopHtml += '		<button type="button" class="btn_popClose"><span class="hidden">Ã¢´Ý±â</span></button>';
+			// PopHtml += '		<button type="button" class="btn_popClose"><span class="hidden">Ã¢ï¿½Ý±ï¿½</span></button>';
 			PopHtml += '		</div>';
 			PopHtml += '	</section>';
 			PopHtml += '</div>';
@@ -760,7 +739,7 @@ var ui = {
 			// 			}	
 
 			// 			if($(this).hasClass("on")){
-			// 				$(this).find("a").attr({"aria-selected": true, "title":"¼±ÅÃµÊ"});
+			// 				$(this).find("a").attr({"aria-selected": true, "title":"ï¿½ï¿½ï¿½Ãµï¿½"});
 			// 			}else{
 			// 				$(this).find("a").attr("aria-selected", false);
 			// 				$(this).find("a").removeAttr("title");
@@ -784,7 +763,7 @@ var ui = {
 					if ($(this).hasClass("on")) {
 						$(this).find("a").attr({
 							"aria-selected": true,
-							"title": "¼±ÅÃµÊ"
+							"title": "ï¿½ï¿½ï¿½Ãµï¿½"
 						});
 					} else {
 						$(this).find("a").attr("aria-selected", false);
@@ -799,9 +778,9 @@ var ui = {
 		},
 		click :function(target){
 			$(target).parents("[role=tabEl]").find("li").removeClass("on").find("a").attr("aria-selected", false).removeAttr("title");
-			$(target).parents("li").addClass("on").find("a").attr({"aria-selected": true, "title":"¼±ÅÃµÊ"});
+			$(target).parents("li").addClass("on").find("a").attr({"aria-selected": true, "title":"ï¿½ï¿½ï¿½Ãµï¿½"});
 
-			//ÃÊ±âÈ­È° ÅÇ ID ÃßÃâ
+			//ï¿½Ê±ï¿½È­È° ï¿½ï¿½ ID ï¿½ï¿½ï¿½ï¿½
 			var hideID = [];
 			$(target).parents("[role=tabEl]").find("a").each(function(e){
 				hideID.push($(this).attr("data-tabID"));
@@ -815,7 +794,7 @@ var ui = {
 			if($(target).parents("li").hasClass("on")){
 				$(target).parents("li").removeClass("on").find("a").attr("aria-selected", false).removeAttr("title");
 			} else{
-				$(target).parents("li").addClass("on").find("a").attr({"aria-selected": true, "title":"¼±ÅÃµÊ"});
+				$(target).parents("li").addClass("on").find("a").attr({"aria-selected": true, "title":"ï¿½ï¿½ï¿½Ãµï¿½"});
 			}
 		},
 		clickRadio :function(target){			
@@ -823,7 +802,7 @@ var ui = {
 				$(target).parents("li").removeClass("on").find("a").attr("aria-selected", false).removeAttr("title");
 			} else{
 				$(target).parents("ul").find("li").removeClass("on").find("a").attr("aria-selected", false).removeAttr("title");
-				$(target).parents("li").addClass("on").find("a").attr({"aria-selected": true, "title":"¼±ÅÃµÊ"});
+				$(target).parents("li").addClass("on").find("a").attr({"aria-selected": true, "title":"ï¿½ï¿½ï¿½Ãµï¿½"});
 			}
 		},
 	},
@@ -837,79 +816,6 @@ var ui = {
 				ui.lockBody.unlock();
 			}
 		}
-	},
-	contAutoHeight : function(target, point){
-		//Å×ºí¸´, ¸ð¹ÙÀÏ ºÐ±âÁ¡ µðÆúÆ®
-		var tabletPoint = "1024",
-			mobilePoint = "768";
-
-		if(point[0][1] != undefined){tabletPoint = point[0][1]}
-		if(point[1][1] != undefined){mobilePoint = point[1][1]}
-
-		// console.log(tabletPoint);
-		// console.log(mobilePoint);
-
-        $(window).bind('load resize', function () {
-			//pc
-            if(window.innerWidth >= tabletPoint){
-                ui.contAutoSetion(target, point[0][0]);
-            } 
-			//Å×ºí¸´
-            else if(window.innerWidth >= mobilePoint){
-                ui.contAutoSetion(target, point[1][0]);
-            } 
-			//¸ð¹ÙÀÏ
-            else{
-				if(point[2][0] == 1){
-					//console.log("1°³");
-					$(target).removeAttr("style");
-				}
-				else{
-					ui.contAutoSetion(target, point[2][0]);
-				}
-            }
-        });
-	},
-	contAutoSetion : function(target, length){
-		$(target).removeAttr("style");
-        var listLine = $(target).length;
-        var arry = [];
-        for (i = 0; i < listLine; i++) {
-            var p_list = $(target).eq(i).innerHeight();
-            arry.push(p_list);
-        }
-        for (i = 0; i < listLine; i++) {
-            if (i < length * 1) {
-                $(target).eq(i).css("height", Math.max.apply(null, arry.slice(0, length)));
-            }
-            else if (i < length * 2) {
-                $(target).eq(i).css("height", Math.max.apply(null, arry.slice(length, length * 2)));
-            }
-            else if (i < length * 3) {
-                $(target).eq(i).css("height", Math.max.apply(null, arry.slice(length * 2, length * 3)));
-            }
-            else if (i < length * 4) {
-                $(target).eq(i).css("height", Math.max.apply(null, arry.slice(length * 3, length * 4)));
-            }
-            else if (i < length * 5) {
-                $(target).eq(i).css("height", Math.max.apply(null, arry.slice(length * 4, length * 5)));
-            }
-            else if (i < length * 6) {
-                $(target).eq(i).css("height", Math.max.apply(null, arry.slice(length * 5, length * 6)));
-            }
-            else if (i < length * 7) {
-                $(target).eq(i).css("height", Math.max.apply(null, arry.slice(length * 6, length * 7)));
-            }
-            else if (i < length * 8) {
-                $(target).eq(i).css("height", Math.max.apply(null, arry.slice(length * 7, length * 8)));
-            }
-            else if (i < length * 9) {
-                $(target).eq(i).css("height", Math.max.apply(null, arry.slice(length * 8, length * 9)));
-            }
-            else if (i < length * 10) {
-                $(target).eq(i).css("height", Math.max.apply(null, arry.slice(length * 9, length * 10)));
-            }
-        }
 	},
 	field : function(){
 		$('.inputBase').on('input', function() {
@@ -935,9 +841,8 @@ var ui = {
             toggleDeleteButton(inputField.prev('.inputBase'));
         }
 	},
-	//Á¢±Ù¼º °³º° ÄÚµå
 	accessibility : {
-		//·¹ÀÌ¾î ¿µ¿ª³» Æ÷Ä¿½º ·çÇÁ ÀÌº¥Æ®
+		//ï¿½ï¿½ï¿½Ì¾ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ä¿ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ìºï¿½Æ®
 		focusloop : function(area){
 
 			//console.log(event);
@@ -947,17 +852,17 @@ var ui = {
 				$("#skip_menu a").eq(0).attr("data-retrunFocus","Y");
 			}
 
-			//Ã¹»·Àç, ¸¶Áö¸· Å¸°Ù ¼ÂÆÃ½Ã ¿¹¿Ü»óÅÂ Ãß°¡
+			//Ã¹ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Å¸ï¿½ï¿½ ï¿½ï¿½ï¿½Ã½ï¿½ ï¿½ï¿½ï¿½Ü»ï¿½ï¿½ï¿½ ï¿½ß°ï¿½
 			var TargetState = "[data-hidden=hidden], [style*='display:none'], [style*='display: none'], [style*='display :none'], [style*='display : none']";
 
-			//Ã¹¹øÂ°, ¸¶Áö¸· Æ÷Ä¿½º ¼ÂÆÃ Àü css·Î display:none Ã³¸® µÇ¾îÀÖ´Â Å¸°Ù ºÐ¸®
+			//Ã¹ï¿½ï¿½Â°, ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ä¿ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ cssï¿½ï¿½ display:none Ã³ï¿½ï¿½ ï¿½Ç¾ï¿½ï¿½Ö´ï¿½ Å¸ï¿½ï¿½ ï¿½Ð¸ï¿½
 			$(area).find("a, button, input, select").not(TargetState).each(function(e){
 				if($(this).is(":visible") == false){
 					$(this).attr("data-hidden","hidden");
 				}
 			});
 			
-			//ÆË¾÷ ³»¿¡ Ã¹¹øÂ°, ¸¶Áö¸· Å¸°Ù ÁöÁ¤
+			//ï¿½Ë¾ï¿½ ï¿½ï¿½ï¿½ï¿½ Ã¹ï¿½ï¿½Â°, ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Å¸ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 			$(area).find("a, button, input, select").not(TargetState).first().attr("data-pop-focus","first");
 			$(area).find("a, button, input, select").not(TargetState).last().attr("data-pop-focus","last");
 			
@@ -967,7 +872,7 @@ var ui = {
 				"data-hidden" : "hidden"
 			});
 			
-			//html ±íÀÌ ±¸ÇØ¼­ aria-hidden Ã³¸® »èÁ¦
+			//html ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ø¼ï¿½ aria-hidden Ã³ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 			var targetHtml = $(area);
 			var endClass = targetHtml.parent().prop('tagName');
 			
@@ -987,7 +892,7 @@ var ui = {
 				}
 			}
 
-			//ÆË¾÷³» ¹öÆ°ÀÌ ¾øÀ»°æ¿ì ÆË¾÷¿µ¿ªÀ» Ã¹¹øÂ° Æ÷Ä¿½º·Î ÀâÀ½
+			//ï¿½Ë¾ï¿½ï¿½ï¿½ ï¿½ï¿½Æ°ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ë¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ã¹ï¿½ï¿½Â° ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 			if($(area).find("[data-pop-focus=first]").length == "0"){
 				$(area).attr({"tabindex" : "0", "data-pop-focus":"first"});	
 				$(area).focus();
@@ -995,7 +900,7 @@ var ui = {
 				$(area).find('[data-pop-focus=first]').focus();
 			}
 			
-			//Á¢±Ù¼º : Ã¹¹øÂ°ÅÇ¿¡¼­ shift + tab °æ¿ì ¸¶Áö¸·¹öÆ°À¸·Î (ÆË¾÷³» Æ÷Ä¿½º ·çÇÁ)
+			//ï¿½ï¿½ï¿½Ù¼ï¿½ : Ã¹ï¿½ï¿½Â°ï¿½Ç¿ï¿½ï¿½ï¿½ shift + tab ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ°ï¿½ï¿½ï¿½ï¿½ (ï¿½Ë¾ï¿½ï¿½ï¿½ ï¿½ï¿½Ä¿ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½)
 			$(area).find("[data-pop-focus=first]").on("keydown", function(e){
 				if(e.shiftKey == true && e.which == 9){
 					$(area).find("[data-pop-focus=last]").focus();
@@ -1003,7 +908,7 @@ var ui = {
 				}
 			});
 			
-			//Á¢±Ù¼º : ¸¶Áö¸·ÅÇ¿¡¼­ tab °æ¿ì Ã¹¹øÂ° ¹öÆ° (ÆË¾÷³» Æ÷Ä¿½º ·çÇÁ)
+			//ï¿½ï¿½ï¿½Ù¼ï¿½ : ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç¿ï¿½ï¿½ï¿½ tab ï¿½ï¿½ï¿½ Ã¹ï¿½ï¿½Â° ï¿½ï¿½Æ° (ï¿½Ë¾ï¿½ï¿½ï¿½ ï¿½ï¿½Ä¿ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½)
 			$(area).find("[data-pop-focus=last]").on("keydown", function(e){
 				if(e.shiftKey == false && e.which == 9){
 					$(area).find("[data-pop-focus=first]").focus();
@@ -1016,7 +921,7 @@ var ui = {
 			$("[data-hidden=hidden]").removeAttr("data-hidden").removeAttr("aria-hidden");
 			$("body *").removeAttr("data-retrunFocus");
 		},
-		//GNB Å°º¸µå ¿î¿ë
+		//GNB Å°ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
 		GNB : function() {
 			var TargetState = "[style*='display:none'], [style*='display: none'], [style*='display :none'], [style*='display : none']";
 			
@@ -1059,7 +964,7 @@ var ui = {
 		},
 		SNB : {
 			init : function(){
-				//snb Æ÷Ä¿½ºÀÌº¥Æ®
+				//snb ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½Ìºï¿½Æ®
 				$("#snb_nav .snb_area > button").on("keydown", function (e) {
 					var focusIndex = $(this).index();
 					console.log(focusIndex)
@@ -1069,25 +974,25 @@ var ui = {
 
 					else if (e.shiftKey == false && e.which == 9) {
 						if($("#snb").css("display") == "block"){
-							//1µª½º
+							//1ï¿½ï¿½ï¿½ï¿½
 							if(focusIndex == 1){
 								setTimeout(function(){
 									$("li[data-SnbfirstTargetD1=true] > a").focus();
 								},0);
 							}
-							//2µª½º
+							//2ï¿½ï¿½ï¿½ï¿½
 							else if(focusIndex == 2){
 								setTimeout(function(){
 									$("li[data-SnbfirstTargetD2=true] > a").focus();
 								},0);
 							}
-							//3µª½º
+							//3ï¿½ï¿½ï¿½ï¿½
 							else if(focusIndex == 3){
 								setTimeout(function(){
 									$("li[data-SnbfirstTargetD3=true] > a").focus();
 								},0);
 							}
-							//4µª½º
+							//4ï¿½ï¿½ï¿½ï¿½
 							else if(focusIndex == 4){
 								setTimeout(function(){
 									$("li[data-SnbfirstTargetD4=true] > a").focus();
@@ -1096,24 +1001,24 @@ var ui = {
 						}
 					}
 				});
-				//SNB Ã¹¹øÂ° / ¸¶Áö¸· Æ÷Ä¿½º Á¦¾î ÀÌº¥Æ®
+				//SNB Ã¹ï¿½ï¿½Â° / ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ä¿ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ìºï¿½Æ®
 				ui.accessibility.SNB.firstFocuseout();
 				ui.accessibility.SNB.lastFocuseout();
 			},
-			//SNB Ã¹¹øÂ° Æ÷Ä¿½º Á¦¾î
+			//SNB Ã¹ï¿½ï¿½Â° ï¿½ï¿½Ä¿ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 			firstFocuseout : function(){
-				//°¢ SNBÁß CMS¿¡¼­ display none Ã³¸®ÇÒ°æ¿ì ÇØ´ç°´Ã¼¸¦ Á¦¿ÜÇÑ ³ª¸ÓÁö Áß Ã¹¹øÂ° Å¸°Ù ¼ÂÆÃ
-				//CMS ¿¡¼­ display:none << ¶ç¾î¾²±â°¡ ºê¶ó¿ìÁ® º°·Î »óÀÌÇØ¼­ 2°³ Å¸ÀÔ Ãß°¡
-				//1µª½º
+				//ï¿½ï¿½ SNBï¿½ï¿½ CMSï¿½ï¿½ï¿½ï¿½ display none Ã³ï¿½ï¿½ï¿½Ò°ï¿½ï¿½ ï¿½Ø´ç°´Ã¼ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ Ã¹ï¿½ï¿½Â° Å¸ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+				//CMS ï¿½ï¿½ï¿½ï¿½ display:none << ï¿½ï¿½î¾²ï¿½â°¡ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ø¼ï¿½ 2ï¿½ï¿½ Å¸ï¿½ï¿½ ï¿½ß°ï¿½
+				//1ï¿½ï¿½ï¿½ï¿½
 				$("#snb_nav #snb > li").not("[style*='display:none']").not("[style*='display: none']").first().attr('data-SnbfirstTargetD1',"true");
-				//2µª½º
+				//2ï¿½ï¿½ï¿½ï¿½
 				$("#snb_nav #snb li.on .menuM > li").not("[style*='display:none']").not("[style*='display: none']").first().attr('data-SnbfirstTargetD2',"true");
-				//3µª½º
+				//3ï¿½ï¿½ï¿½ï¿½
 				$("#snb_nav #snb li.on .menuM li.on .menuS > li").not("[style*='display:none']").not("[style*='display: none']").first().attr('data-SnbfirstTargetD3',"true");
-				//4µª½º
+				//4ï¿½ï¿½ï¿½ï¿½
 				$("#snb_nav #snb li.on .menuM li.on .menuS li.on .menuSS > li").first("[style*='display:none']").not("[style*='display: none']").last().attr('data-SnbfirstTargetD4',"true");
 
-				//1µª½º Ã¹¹øÂ°Æ÷Ä¿½º ÀÌº¥Æ®
+				//1ï¿½ï¿½ï¿½ï¿½ Ã¹ï¿½ï¿½Â°ï¿½ï¿½Ä¿ï¿½ï¿½ ï¿½Ìºï¿½Æ®
 				$("li[data-SnbfirstTargetD1=true] > a").on("keydown", function (e) {
 					if (e.shiftKey == true && e.which == 9) {
 						setTimeout(function () {
@@ -1123,7 +1028,7 @@ var ui = {
 					}
 				});
 
-				//2µª½º Ã¹¹øÂ°Æ÷Ä¿½º ÀÌº¥Æ®
+				//2ï¿½ï¿½ï¿½ï¿½ Ã¹ï¿½ï¿½Â°ï¿½ï¿½Ä¿ï¿½ï¿½ ï¿½Ìºï¿½Æ®
 				$("li[data-SnbfirstTargetD2=true] > a").on("keydown", function (e) {
 					if (e.shiftKey == true && e.which == 9) {
 						setTimeout(function () {
@@ -1133,7 +1038,7 @@ var ui = {
 					}
 				});
 
-				//3µª½º Ã¹¹øÂ°Æ÷Ä¿½º ÀÌº¥Æ®
+				//3ï¿½ï¿½ï¿½ï¿½ Ã¹ï¿½ï¿½Â°ï¿½ï¿½Ä¿ï¿½ï¿½ ï¿½Ìºï¿½Æ®
 				$("li[data-SnbfirstTargetD3=true] > a").on("keydown", function (e) {
 					if (e.shiftKey == true && e.which == 9) {
 						setTimeout(function () {
@@ -1143,7 +1048,7 @@ var ui = {
 					}
 				});
 
-				//4µª½º Ã¹¹øÂ°Æ÷Ä¿½º ÀÌº¥Æ®
+				//4ï¿½ï¿½ï¿½ï¿½ Ã¹ï¿½ï¿½Â°ï¿½ï¿½Ä¿ï¿½ï¿½ ï¿½Ìºï¿½Æ®
 				$("li[data-SnbfirstTargetD4=true] > a").on("keydown", function (e) {
 					if (e.shiftKey == true && e.which == 9) {
 						setTimeout(function () {
@@ -1153,20 +1058,20 @@ var ui = {
 					}
 				});
 			},
-			//SNB ¸¶Áö¸· Æ÷Ä¿½º ¼ÂÆÃ ÈÄ ÀÌº¥Æ® Á¦¾î
+			//SNB ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ä¿ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ìºï¿½Æ® ï¿½ï¿½ï¿½ï¿½
 			lastFocuseout : function(){
-				//°¢ SNBÁß CMS¿¡¼­ display none Ã³¸®ÇÒ°æ¿ì ÇØ´ç°´Ã¼¸¦ Á¦¿ÜÇÑ ³ª¸ÓÁö Áß ¸¶Áö¸· Å¸°Ù ¼ÂÆÃ
-				//CMS ¿¡¼­ display:none << ¶ç¾î¾²±â°¡ ºê¶ó¿ìÁ® º°·Î »óÀÌÇØ¼­ 2°³ Å¸ÀÔ Ãß°¡
-				//1µª½º
+				//ï¿½ï¿½ SNBï¿½ï¿½ CMSï¿½ï¿½ï¿½ï¿½ display none Ã³ï¿½ï¿½ï¿½Ò°ï¿½ï¿½ ï¿½Ø´ç°´Ã¼ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Å¸ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+				//CMS ï¿½ï¿½ï¿½ï¿½ display:none << ï¿½ï¿½î¾²ï¿½â°¡ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ø¼ï¿½ 2ï¿½ï¿½ Å¸ï¿½ï¿½ ï¿½ß°ï¿½
+				//1ï¿½ï¿½ï¿½ï¿½
 				$("#snb_nav #snb > li").not("[style*='display:none']").not("[style*='display: none']").last().attr('data-SnbLastTargetD1',"true");
-				//2µª½º
+				//2ï¿½ï¿½ï¿½ï¿½
 				$("#snb_nav #snb li.on .menuM > li").not("[style*='display:none']").not("[style*='display: none']").last().attr('data-SnbLastTargetD2',"true");
-				//3µª½º
+				//3ï¿½ï¿½ï¿½ï¿½
 				$("#snb_nav #snb li.on .menuM li.on .menuS > li").not("[style*='display:none']").not("[style*='display: none']").last().attr('data-SnbLastTargetD3',"true");
-				//4µª½º
+				//4ï¿½ï¿½ï¿½ï¿½
 				$("#snb_nav #snb li.on .menuM li.on .menuS li.on .menuSS > li").not("[style*='display:none']").not("[style*='display: none']").last().attr('data-SnbLastTargetD4',"true");
 
-				//1µª½º ¸¶Áö¸·Æ÷Ä¿½º ÀÌº¥Æ®
+				//1ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ ï¿½Ìºï¿½Æ®
 				$("li[data-SnbLastTargetD1=true] > a").on("keydown", function (e) {
 					if (e.shiftKey == false && e.which == 9) {
 						setTimeout(function () {
@@ -1176,7 +1081,7 @@ var ui = {
 					}
 				});
 
-				//2µª½º ¸¶Áö¸·Æ÷Ä¿½º ÀÌº¥Æ®
+				//2ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ ï¿½Ìºï¿½Æ®
 				$("li[data-SnbLastTargetD2=true] > a").on("keydown", function (e) {
 					if (e.shiftKey == false && e.which == 9) {
 						if($("#snb_nav .snb_area > button:nth-of-type(3)").index() == "-1"){
@@ -1192,7 +1097,7 @@ var ui = {
 					}
 				});
 
-				//3µª½º ¸¶Áö¸·Æ÷Ä¿½º ÀÌº¥Æ®
+				//3ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ ï¿½Ìºï¿½Æ®
 				$("li[data-SnbLastTargetD3=true] > a").on("keydown", function (e) {
 					console.log(111);
 					if (e.shiftKey == false && e.which == 9) {
@@ -1209,7 +1114,7 @@ var ui = {
 					}
 				});
 
-				//4µª½º ¸¶Áö¸·Æ÷Ä¿½º ÀÌº¥Æ®
+				//4ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ ï¿½Ìºï¿½Æ®
 				$("li[data-SnbLastTargetD4=true] > a").on("keydown", function (e) {
 					if (e.shiftKey == false && e.which == 9) {
 						setTimeout(function () {
@@ -1230,81 +1135,14 @@ var ui = {
 			}
 		}
 	},
-	touchDim : function(){
-		//°¡·Î ½ºÅ©·Ñ¹Ù Ã¼Å©
-		// $.fn.hasHorizontalScrollBar = function() {
-		// 	return this.get(0) ? Math.ceil(this.get(0).scrollWidth) > Math.ceil(this.innerWidth()) : false;
-		// }
-
-		//Å×ÀÌºí °¡·Î ½ºÅ©·Ñ ¹ß»ý½Ã ÅÍÄ¡ º¸Á¶ µõ »ý¼º
-		// $(".contTable").each(function(index){
-		// 	if($(this).hasHorizontalScrollBar() == true){
-		// 		var touchHtml = '<div class="tableTouchArea"><button type="button" class="tableScrollTouch"><span class="hidden">ÅÍÄ¡ÇÏ¸é Å×ÀÌºí ½ºÅ©·Ñ ÇÒ ¼ö ÀÖ½À´Ï´Ù.</span></button></div>';
-		// 		if($(this).find(".tableTouchArea").length != "1"){
-		// 			$(this).append(touchHtml);
-		// 			$(".contTable .tableTouchArea, .contTable .tableScrollTouch").on("click", function(e){
-		// 				$(this).parents(".contTable").find(".tableTouchArea").hide();
-		// 			});
-		// 		}
-		// 	} else{
-		// 		$(this).find(".tableTouchArea").remove();
-		// 	}
-		// });
-
-		//Å×ÀÌºí °¡·Î ½ºÅ©·Ñ ¹ß»ý½Ã ÅÍÄ¡ º¸Á¶ µõ »ý¼º
-		// $(".limitX").each(function(index){
-		// 	if($(this).hasHorizontalScrollBar() == true){
-		// 		var touchHtml = '<div class="tableTouchArea"><button type="button" class="tableScrollTouch"><span class="hidden">ÅÍÄ¡ÇÏ¸é ½ºÅ©·Ñ ÇÒ ¼ö ÀÖ½À´Ï´Ù.</span></button></div>';
-		// 		if($(this).find(".tableTouchArea").length != "1"){
-		// 			$(this).append(touchHtml);
-		// 			$(".limitX .tableTouchArea, .limitX .tableScrollTouch").on("click", function(e){
-		// 				$(this).parents(".limitX").find(".tableTouchArea").hide();
-		// 			});
-		// 		}
-		// 	} else{
-		// 		$(this).find(".tableTouchArea").remove();
-		// 	}
-		// });
-
-		// $(".contTable, .limitX").on("scroll", function(e){
-		// 	$(this).find(".tableTouchArea").hide();
-		// });
-	
-	},
-	stepRows : function(target, item, point, pointItem){
-		//ÁöÁ¤Æ÷ÀÎÆ®
-		if(window.innerWidth >= point){
-			$(target).removeClass("rowItem3 rowItem2");
-			ui.contAutoSetion(""+target+">ul .item", item);
-			//console.log(1);
-		} 
-		
-		else if(window.innerWidth >= 768){
-			if(pointItem == 3){
-				$(target).addClass("rowItem3");
-				ui.contAutoSetion(""+target+">ul .item", "3");
-			}
-			if(pointItem == 2){
-				$(target).addClass("rowItem2");
-				ui.contAutoSetion(""+target+">ul .item", "2");
-			}
-		} 
-		//¸ð¹ÙÀÏ
-		else{
-			$(target).removeClass("rowItem3 rowItem2");
-			ui.contAutoSetion(""+target+">ul .item", "1");
-			//console.log(3);
-		}
-	},
-	//¸ð¹ÙÀÏ º»¹® ½ºÅ©·Ñ ¹æÁö
 	lockBody : {
 		val : {
-			mobileBodyLock : "N",						//¸ð¹ÙÀÏ body ½ºÅ©·Ñ ¶ô ¿©ºÎ
-			LockEl : 'html, body',						//scroll Å¸°Ù
-			contWrap : '#header, #container, footer',	//ÄÁÅÙÃ÷ ¿µ¿ª
-			LockScrollTop : "", 						//½ºÅ©·Ñ ¶ô ½Ãµµ½Ã ÇöÀç ½ºÅ©·Ñ °ª
+			mobileBodyLock : "N",						
+			LockEl : 'html, body',						
+			contWrap : '#header, #container, footer',	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+			LockScrollTop : "", 						//ï¿½ï¿½Å©ï¿½ï¿½ ï¿½ï¿½ ï¿½Ãµï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Å©ï¿½ï¿½ ï¿½ï¿½
 		},
-		//Àá±×±â
+		//ï¿½ï¿½×±ï¿½
 		lock : function(){
 			if(window.pageYOffset) {
 				ui.lockBody.val.LockScrollTop = window.pageYOffset;
@@ -1319,7 +1157,7 @@ var ui = {
 
 			ui.lockBody.val.mobileBodyLock = "Y";
 		},
-		//ÇØÁö
+		//ï¿½ï¿½ï¿½ï¿½
 		unlock : function(){
 			$(ui.lockBody.val.LockEl).css({
 				height: "",
@@ -1336,60 +1174,6 @@ var ui = {
 			}, 0);
 
 			ui.lockBody.val.mobileBodyLock = "N";
-		}
-	},
-	//SNB PC µª½ºº° ÃÖ´ë ³ÐÀÌ°ª ±¸ÇÏ±â
-	snbDept : {
-		init  : function(breakPoint){
-
-			onePoint = "";
-			if(window.innerWidth <= breakPoint){
-				onePoint = "PC";
-			} else{
-				onePoint = "MOBIE";
-			}
-
-			ui.snbDept.set(breakPoint);
-			$(window).bind('resize', function(){
-				ui.snbDept.set(breakPoint);
-			});
-		},
-		set : function(breakPoint){
-			//SNB °¢ µª½ºº° ÃÖ´ë ³ÐÀÌ °© ±¸ÇÏ±â
-			//+58Àº ulÀÇ padding °ª + º¸´õ ¾ç³¡ 2 ´õÇÑ °ª / 30Àº ¾Õ¿¡ 58°ª°ú ¹öÆ° ÁÂ ¿ì ÆÐµù °ªÀ» - ÇÑ ³ª¸ÓÁö °ªÀ» + ÇØÁà¾ß °¡Àå ³ÐÀº µª½º°¡ È°¼ºÈ­ µÇ¾úÀ»¶§ ÅØ½ºÆ®°¡ Àß¸®Áö ¾ÊÀ½
-			var margin = 58 + 30;
-			if(window.innerWidth <= breakPoint){
-				if(onePoint == "PC"){	
-					onePoint = "MOBIE";
-					$("#snb_nav .snb_area>button").removeAttr("style");
-					//console.log("¸ð¹ÙÀÏ");
-				}
-			}else{
-				if(onePoint == "MOBIE"){
-					//1µª½º 			
-					$("#snb_nav").removeAttr("class").addClass("active1");
-					$("#snb").show().css({"width":"auto","visibility":"hidden"});
-					$("#snb_nav .snb_area>button.dep1").css("width", $("#snb>li.on").outerWidth() + margin+"px");
-
-					//2µª½º
-					$("#snb_nav").removeAttr("class").addClass("active2");
-					$("#snb").show().css("width","auto");
-				
-					$("#snb_nav .snb_area>button.dep2").css("width", $("#snb>li.on>.menuM").outerWidth() + margin + "px");
-
-					//3µª½º
-					$("#snb_nav").removeAttr("class").addClass("active3");
-					$("#snb").show().css("width","auto");
-					$("#snb_nav .snb_area>button.dep3").css("width", $("#snb>li.on>.menuM>li.on>.menuS").outerWidth() + margin + "px");
-
-					$("#snb_nav").removeAttr("class");
-					$("#snb").hide().removeAttr("style");
-					//console.log("PC");
-
-					onePoint = "PC";
-				}
-				
-			}
 		}
 	}
 }
