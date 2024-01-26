@@ -99,8 +99,19 @@ caption, caption>strong, caption>p, .scHdn, .txtHidden, legend {position:absolut
 .bg_Gray10 {background:var(--color-gray-lv0) !important}
 .bg_Red {background:var(--color-red) !important}
 .bg_Blue {background:var(--color-blue) !important}
-.bg_Navy {background:var(--color-navy) !important}
 .bg_Green {background:var(--color-green) !important}
+
+.c_Black {color:var(--color-black) !important}
+.c_Gray1 {color:var(--color-gray-lv1) !important}
+.c_Gray2 {color:var(--color-gray-lv2) !important}
+.c_Gray3 {color:var(--color-gray-lv3) !important}
+.c_Gray4 {color:var(--color-gray-lv4) !important}
+.c_Gray5 {color:var(--color-gray-lv5) !important}
+.c_Gray6 {color:var(--color-gray-lv6) !important}
+.c_Gray7 {color:var(--color-gray-lv7) !important}
+.c_Gray8 {color:var(--color-gray-lv8) !important}
+.c_Gray9 {color:var(--color-gray-lv9) !important}
+.c_Gray10 {color:var(--color-gray-lv0) !important}
 
 .kA{word-break:keep-all !important;}
 .inB {display:inline-block;vertical-align: top;}
@@ -169,7 +180,7 @@ a:focus:not(:focus-visible){
 /*Accordion*/
 .AccordionBase{width:100%;height:auto;border-top:1px solid #e3e3e3;}
 .AccordionBase>li{position:relative;width:100%;height:auto;border-bottom:1px solid #e3e3e3;transition:background-color 0.2s;}
-.AccordionBase>li .AccordionBtn{position:relative;display:block;width:100%;padding:19px 50px 19px 32px;text-align:left;background:#fff;}
+.AccordionBase>li .AccordionBtn{position:relative;display:block;width:100%;padding:19px 20px 19px 20px;text-align:left;background:#fff;}
 .AccordionBase>li .AccordionBtn>span{position:relative;display:block;font-size:16px;font-weight:bold;line-height:22px;color:var(--color-black);}
 .AccordionBase>li .AccordionBtn::after{content:"";width:16px;height:9px;position:absolute;right:0;top:29px;background:url(../img/common/icon_accOff_arrB.svg) no-repeat center center;background-size: 100% auto;transition:all 0.2s;top:50%;margin-top:-4.5px}
 .AccordionBase>li .AccordionCont{position:relative;padding:24px 16px 30px 16px;display:none;border-top:1px solid #e3e3e3}
@@ -182,7 +193,24 @@ a:focus:not(:focus-visible){
 .baseBtn.small {height:35px;border-radius: 6px;}
 .baseBtn.small>span {font-size: 13px;}
 
+.baseBtn:disabled {background:#C8C8C8 !important;border:0 !important}
+.baseBtn:disabled>span {color:#949494 !important }
+
+.baseBtn.line {background:#fff;border: 1px solid #2168F5;}
+.baseBtn.line>.base {color:#2168F5}
+
+.baseBtn.black {background:#000;}
+.baseBtn.black>.base {color:#fff}
+
+.baseBtn.gray {background:#949494;}
+.baseBtn.gray>.base {color:#fff}
+
 .btnGoLine {display:block;display:flex;align-items: center;height:60px;border-top:1px solid var(--color-gray-lv5);border-bottom: 1px solid var(--color-gray-lv5);background:url(../img/layout/ico_arrR_go.svg) no-repeat top 50% right 15px;padding-left:15px;font-weight: 600;}
+
+
+
+.btnArea.double {display:flex;gap:10px;}
+.btnArea.triple {display:flex;gap:10px;}
 
 .stickyBtm_wrap .stickyCont {position:fixed;bottom:75px;max-width:var(--layout-size);width:100%;z-index: 10;margin:0 auto;left:0;right:0;padding:0 36px;background:#fff;}
 .stickyCont:before {content:'';display:block;position: absolute;top:0px;left: 0;width: 100%;height: 63px;margin-top:-63px;background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));pointer-events: none;}
@@ -434,6 +462,8 @@ textarea:focus {border:1px solid var(--color-blue);outline:none;}
 .popLayout .popConts .btnArea.double .baseBtn {width:50%;}
 .popLayout .popConts .txtG {max-height:calc(100vh - 140px);max-height:calc(100dvh - 140px);overscroll-behavior: none;}
 .scroll-gradient {position: absolute;bottom: 84px;left: 0;width: 100%;height: 75px;background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));pointer-events: none;}
+
+.pop_wrap.midSheet .popLayout .popConts .txtG {max-height: calc(100vh - 400px);}
 
 .popLayout .btn_popX {position: absolute;top:24px;right: 16px;width: 18px;height: 18px;background: url(../img/common/icon_popClose.svg) no-repeat;}
 .popLayout .btn_popX_wh {position: absolute;top:30px;right: 32px;width: 18px;height: 18px;background: url(../img/common/icon_popClose_wh.png) no-repeat;background-size: contain;}

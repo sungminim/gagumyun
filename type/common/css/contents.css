@@ -22,7 +22,7 @@
 .productDetail .swiperThumnail .swiper-slide img {width:100%;height:100%;aspect-ratio:375 / 220;object-fit: cover;}
 .productDetail .swiperThumnail .pagination_fraction {position:absolute;width:auto;bottom:10px;left:50%;display:inline-block;background:rgba(0,0,0,0.7);border-radius: 15px;font-size:13px;color:#fff;z-index: 10;padding:2px 13px;transform: translateX(-50%);}
 .productDetail .swiperThumnail .pagination_fraction span {color:#fff;}
-.productDetail .productInfo {padding:20px 15px;border-bottom: 1px solid var(--color-gray-lv4);}
+.productDetail .productInfo {padding:20px 15px;border-bottom: 1px solid var(--color-gray-lv4);display:block;}
 .productDetail .productInfo .made {color:#555;font-size:13px;margin-bottom:5px;}
 .productDetail .productInfo .tit {font-size:18px;font-weight: 600;line-height: 18px;}
 .productDetail .productInfo .priceArea {display:flex;margin-top:3px;}
@@ -103,11 +103,11 @@
 .writeList_v .registerArea .btnUpload {position:absolute;width: 100%;height: 100%;cursor: pointer;background: url(../img/layout/ico_camera.svg) no-repeat top 13px left 50%;}
 .writeList_v .registerArea .btnUpload .status {text-align: center;font-size: 13px;display: block;padding-top:35px;}
 .writeList_v .registerArea #file {display: none;}
-.writeList_v .photoList .photo {position:relative;width:65px;height:65px;border-radius: 5px;border:1px solid var(--color-gray-lv4);font-size: 0;}
+.writeList_v .photoList .photo {position:relative;width:65px;height:65px;border-radius: 5px;border:1px solid var(--color-gray-lv4);font-size: 0;align-items: flex-start;}
 .writeList_v .photoList .photo .btnDelete {position:absolute;right:-5px;top:-5px;display:block;width:16px;height:16px;background:url(../img/layout/ico_close_s.svg) no-repeat center}
 .writeList_v .photoList .photo img {position:absolute;left:50%;top:50%;transform: translate(-50%, -50%);width:100%;height:100%;object-fit: cover;border-radius: 5px;}
 .writeList_v .photoList {display:flex;gap:10px;display: flex;gap: 10px;flex-wrap: nowrap;overflow-x: auto;padding-top:5px;}
-
+.writeList_v>ul.photoList>li+li {margin-top:0;}
 .inputWrap button.inputBase.typeGo {background-color: #fff;padding:0 16px;text-align: left;}
 
 .categorySelect .inputBox+.inputBase {margin-top:15px;}
