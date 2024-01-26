@@ -309,6 +309,17 @@ input:focus::placeholder {color: transparent !important;}
 .formInput.typeTime .time {position:absolute;right:20px;top:50%;transform: translateY(-50%);color:#2168F5;font-size: 13px;}
 textarea:focus {border:1px solid var(--color-blue);outline:none !important;}
 
+.formInput .baseBtn.small {width:auto;height:50px;}
+.formInput .inputWrap .baseBtn.small>span {font-size: 16px;}
+.formInput.typeBtn1 .inputWrap {display:flex;gap: 5px;}
+.formInput.typeBtn1 .inputWrap .baseBtn.small {min-width: 70px;}
+.formInput.typeBtn1 .inputWrap .inputBase {flex:1;}
+.formInput.typeBtn2 .inputWrap {display:flex;gap: 5px;}
+.formInput.typeBtn2 .inputWrap .baseBtn.small {min-width: 70px;}
+.formInput.typeBtn2 .inputWrap .inputBase {flex:1;}
+.formInput.verti .inputWrap {display:flex;gap: 5px;}
+.formInput.verti .inputWrap .inputBase {flex:1;}
+
 .inputTextArea {width:100%;height:auto;padding:15px 14px;border-radius: var(--radius-lv2);font-size:16px;line-height:21px;color:var(--color-black);resize:none;box-sizing:border-box;border:1px solid var(--color-gray-lv4);}
 .inputTextArea:disabled {background-color:var(--color-gray-lv2);color:var(--color-gray-lv5);border:none;}
 .inputTextArea[readonly] {background-color:var(--color-gray-lv2);color:var(--color-gray-lv5);border:none;}
