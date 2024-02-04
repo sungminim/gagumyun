@@ -183,3 +183,10 @@ input[type='date']:focus::before,
 input[type='date']:valid::before {display: none;}
 
 .btn_help {position:relative;display:inline-block;width:17px;height:17px;vertical-align: middle;background:url(../img/layout/ico_help.svg) no-repeat center;margin:0 3px;}
+
+.typeLogin {background:var(--color-blue)}
+.typeLogin #contents {padding-bottom: 0;}
+.typeLogin #contents>article {min-height: 100vh;min-height: 100dvh;}
+.typeLogin #container {padding-top:0}
+.typeLogin .login {height: 100%;}
+.typeLogin .loginTxtArea {height: 100%;display:flex;align-items: center;justify-content: center;flex-direction: column;}
