@@ -184,9 +184,32 @@ input[type='date']:valid::before {display: none;}
 
 .btn_help {position:relative;display:inline-block;width:17px;height:17px;vertical-align: middle;background:url(../img/layout/ico_help.svg) no-repeat center;margin:0 3px;}
 
-.typeLogin {background:var(--color-blue)}
+.typeLogin {}
 .typeLogin #contents {padding-bottom: 0;}
 .typeLogin #contents>article {min-height: 100vh;min-height: 100dvh;}
 .typeLogin #container {padding-top:0}
-.typeLogin .login {height: 100%;}
-.typeLogin .loginTxtArea {height: 100%;display:flex;align-items: center;justify-content: center;flex-direction: column;}
+.typeLogin .login {height: calc(80vh - 30px)}
+.typeLogin .loginTxtArea {height: 100%;display:flex;justify-content: center;flex-direction: column;}
+.typeLogin .loginTxt_lv1 {font-size: 18px;color:var(--color-gray-lv8);margin-bottom: 10px;text-align: center;letter-spacing: -.5px;font-weight: 500;}
+.typeLogin .loginTit {font-size: 40px;line-height:49px;font-weight: 700;letter-spacing: -0.5px;text-align: center;}
+.typeLogin .loginTit img {height: 34px;position: relative;top:3px;}
+.typeLogin .loginTit span {color:var(--color-blue);font-weight: 800;}
+
+#login_dock {position:fixed;bottom:0;left:0;right:0;z-index: 99;display:flex;flex-direction: column;padding:10px 15px 15px 15px;box-sizing: border-box;background:#fff;}
+#login_dock .btnArea {display:flex;width:100%;font-size: 0;gap:15px;align-items: center;margin-top:10px;flex-direction: column;flex-wrap: wrap;}
+
+#pop_login {}
+#pop_login .popInnerCont {padding-bottom: 40px;}
+#pop_login .btnArea {margin-top:30px;display: flex;flex-direction: column;gap: 15px;}
+#pop_login .etcUtil {display:flex;justify-content: space-between;align-items: center;}
+#pop_login .etcUtil .findArea>a:first-child {position:relative;margin-right: 5px;padding-right: 10px;}
+#pop_login .etcUtil .findArea>a:first-child::before {content:'';display:block;position: absolute;right: 0;top:3px;width:1px;height:12px;background-color: var(--color-gray-lv6);}
+#pop_login .addLogin {margin-top:40px;}
+#pop_login .add_login_tit {position:relative;text-align: center;color: var(--color-gray-lv7);}
+#pop_login .add_login_tit::before {content:'';display:block;position: absolute;width:100%;height: 1px;background:var(--color-gray-lv6);top:50%;margin-top:-.5px;left:0;}
+#pop_login .add_login_tit>span {display:inline-block;background:#fff;position: relative;z-index: 1;vertical-align: top;padding:0 15px;font-size: 15px;}
+
+.snsLogin {display:flex;gap:15px;justify-content: center;margin-top:15px;}
+.snsLogin button {display:block;width:50px;height:50px;background:#000;border-radius: 50%;}
+.snsLogin .typeKaKao {background:#FEE500 url(../img/layout/kakao_s.svg) no-repeat center;background-size: 27px auto;}
+.snsLogin .typeApple {background:#fff url(../img/layout/ico_apple.svg) no-repeat center;background-size: 50px auto;}

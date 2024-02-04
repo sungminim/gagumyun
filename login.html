@@ -37,7 +37,7 @@
                     <div class="login">
                         <div class="loginTxtArea">
                             <p class="loginTxt_lv1">가전, 가구, 침구를 한 번에!</p>
-                            <p class="loginTit">거래와 배송을 한번에 <br>가구면에서!
+                            <p class="loginTit">거래와 배송을 한번에 <br><img src="type/common/img/layout/logo.svg">에서!
                         </div>
                     </div>
                 </article>
@@ -45,6 +45,98 @@
             </div>
         </div>
         <!-- 본문 } -->
+
+        <aside id="login_dock">
+            <div class="btnArea">
+                
+                <a href="#none" class="baseBtn kakao" onclick="alert('준비중입니다.');return false;"><span class="base"><i><img src="type/common/img/layout/kakao_s.svg" alt=""></i>카카오로 3초 만에 시작하기</span></a>
+                <a href="#none" class="baseBtn lineBlack" onclick="ui.LayerPop.Show('#pop_login');"><span class="base">다른 방법으로 로그인</span></a>
+            </div>
+        </aside>
+
+    <!-- 이용약관 동의 레이어팝업 -->
+    <div class="pop_wrap bottomSheet " id="pop_login">
+        <section class="popLayout popLayer">
+            <h2 class="popTit">로그인</h2>
+
+            <div class="popInnerCont">
+                <div class="groupCont">
+                    <div class="division">
+                        <div class="writeList_v">
+                            <a href="#none"></a>
+                            <ul>
+                                <li>
+                                    <div class="formInput">
+                                        <div class="inputWrap">
+                                            <input type="text" class="inputBase" title="아이디를 입력하세요" placeholder="아이디(이메일)를 입력하세요">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="inputWrap typeEye">
+                                        <input type="password" class="inputBase" title="신규 비밀번호를 입력하세요" placeholder="패스워드를 입력하세요">
+                                        <button type="button" class="btn_eye"><span class="txtHidden">비밀번호 보기</span></button>
+                                    </div>
+                                    <script>
+                                        // 비밀번호 보기/끄기
+                                        $(function(){
+                                            $('.typeEye').each(function(){
+                                                const thisInput = $(this).find('.inputBase');
+                                                const thisBtn = $(this).find('.btn_eye');
+                    
+                                                thisBtn.on('click', function () {
+                                                    if(thisInput.attr("type") == "password"){
+                                                        thisBtn.addClass('off');
+                                                        thisBtn.find('span').html('비밀번호 끄기');
+                                                        thisInput.attr("type",'text');
+                                                    }else{
+                                                        thisBtn.removeClass('off');
+                                                        thisBtn.find('span').html('비밀번호 보기');
+                                                        thisInput.attr("type",'password');
+                                                    }
+                                                });
+                                            })
+                                        })
+                                    </script>
+                                </li>
+                                <li class="mT10">
+                                    <div class="etcUtil">
+                                        <label class="inputBox">
+                                            <input type="checkbox">
+                                            <span class="data">자동로그인</span>
+                                        </label>
+                                        <div class="findArea">
+                                            <a href="#none">아이디 찾기</a>
+                                            <a href="#none">비밀번호 찾기</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="btnArea">
+                            <a href="index.html" class="baseBtn "><span class="base">로그인</span></a>
+                            <button type="button" class="baseBtn lineBlack"><span class="base">회원가입</span></button>
+                        </div>
+
+                        <div class="addLogin">
+                            <p class="add_login_tit"><span>SNS 계정으로 로그인</span></p>
+
+                            <div class="snsLogin">
+                                <button type="button" class="typeKaKao">
+                                    <span class="scHdn">카카오로 로그인</span>
+                                </button>
+                                <button type="button" class="typeApple">
+                                    <span class="scHdn">애플로 로그인</span>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="btn_popX btn_popClose"><span class="base txtHidden">닫기</span></button>
+        </section>
+    </div>
 
     </div>
 </body>
