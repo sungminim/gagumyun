@@ -212,4 +212,4 @@ input[type='date']:valid::before {display: none;}
 .snsLogin {display:flex;gap:15px;justify-content: center;margin-top:15px;}
 .snsLogin button {display:block;width:50px;height:50px;background:#000;border-radius: 50%;}
 .snsLogin .typeKaKao {background:#FEE500 url(../img/layout/kakao_s.svg) no-repeat center;background-size: 27px auto;}
-.snsLogin .typeApple {background:#fff url(../img/layout/ico_apple.svg) no-repeat center;background-size: 50px auto;}
+.snsLogin .typeApple {background:#fff url(../img/layout/ico_apple.svg) no-repeat center;background-size: 53px auto;border:1px solid #000}
