@@ -2,6 +2,10 @@ $(document).ready(function() {
 	ui.init();
 });
 
+function goBack(){
+	window.history.back();
+}
+
 function popClose() {
 	$(document).on('click', '.btn_popClose', function() {
 		// alert('open');
