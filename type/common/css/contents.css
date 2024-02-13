@@ -16,6 +16,9 @@
 .product_list>li .thumnail .btn_like.on {background-image: url(../../common/img/layout/btn_heart_on.svg);}
 .product_list>li .status {position:absolute;width:100%;height:100%;left:0;top:0;background-color: rgba(0,0,0,0.5);display:flex;align-items: center;justify-content: center;}
 .product_list>li .status .status_tit {color:#fff;}
+.product_list .tagArea {display:flex;gap:2px;margin-top:10px;flex-wrap: wrap;}
+.product_list .tagArea>p {font-size:12px;padding:1px 5px;text-align: center;border:1px solid #111;border-radius: 5px;}
+.product_list .tagArea>p.tag_deli {padding-left:28px;background:url(../../common/img/layout/ico_car.svg) no-repeat left 7px top 6px;background-size: 18px auto;}
 
 .productDetail .swiperThumnail {position:relative;height:calc(45vh + 52px);text-align: center;}
 .productDetail .swiperThumnail:before {content:'';display:block;position:absolute;width:100%;left:0;width:100%;height:48px;background:linear-gradient(180deg,rgba(0,0,0,.3) 0%,rgba(0,0,0,.15) 37.5%,rgba(0,0,0,0) 100%);z-index: 20;}
@@ -29,8 +32,9 @@
 .productDetail .productInfo .priceArea .rate {color:#2168F5;font-size:16px;font-weight: 600;}
 .productDetail .productInfo .price_before {margin-bottom:-7px;margin-top:5px;color:#b7b7b7;font-size:13px;text-decoration:line-through;}
 .productDetail .productInfo .price {font-size:16px;font-weight:600;margin-right: 5px;}
-.productDetail .productInfo .tagArea {display:flex;gap:5px;margin-top:10px;}
-.productDetail .productInfo .tagArea>p {font-size:12px;padding:2px 7px;text-align: center;border:1px solid #111;border-radius: 15px;}
+.productDetail .productInfo .tagArea {display:flex;gap:5px;margin-top:10px;flex-wrap: wrap;}
+.productDetail .productInfo .tagArea>p {font-size:12px;padding:2px 7px;text-align: center;border:1px solid #111;border-radius: 5px;}
+.productDetail .productInfo .tagArea>p.tag_deli {padding-left:28px;background:url(../../common/img/layout/ico_car.svg) no-repeat left 7px top 6px;background-size: 18px auto;}
 .productDetail .productInfo .btmInfo {margin-top:10px;display:flex;align-items: center;justify-content: space-between;}
 .productDetail .productInfo .btmInfo .cateG {display:flex;align-items: center;}
 .productDetail .productInfo .btmInfo .cateG>p {position:relative;font-size:12px;color:var(--color-gray-lv7);}
@@ -46,6 +50,7 @@
 .productDetail .sellerInfo {padding:20px 15px 0 15px;}
 .sellerInfo .seller {display:flex;align-items: center;gap:10px;}
 .sellerInfo .seller .profile {border-radius: 50%;width:50px;height:50px;}
+.sellerInfo .seller .profile img {width:100%;height:100%;object-fit: cover;}
 .sellerInfo .seller .name {font-weight: 600;}
 .productDetail .moreProduct {padding:20px 15px;}
 .productDetail .moreProduct .moreTit {display:block;width:100%;background:url(../img/layout/ico_arrR_go.svg) no-repeat top 50% right 0;font-weight: 600;}
@@ -94,7 +99,7 @@
 .settingList>li .txtBody3 {color:var(--color-gray-lv7);display:block;margin-top:3px;}
 
 .settingList.typeToggle>li .toggle {position:absolute;right:0;top:50%;transform: translateY(-50%);}
-.settingList>li .arrR {display:block;color:var(--color-gray-lv6);font-weight: 600;background: url(../img/layout/ico_arrR_go.svg) no-repeat top 50% right 0;padding-right: 50px;}
+.settingList>li .arrR {display:block;color:var(--color-gray-lv6);font-weight: 500;background: url(../img/layout/ico_arrR_go.svg) no-repeat top 50% right 0;padding-right: 50px;background-size: 15px auto;}
 
 .reportSelect .settingList>li .arrR {color:#111;font-weight: 400;}
 .reportReason textarea {margin-top:20px;display:block;}
@@ -213,3 +218,34 @@ input[type='date']:valid::before {display: none;}
 .snsLogin button {display:block;width:50px;height:50px;background:#000;border-radius: 50%;}
 .snsLogin .typeKaKao {background:#FEE500 url(../img/layout/kakao_s.svg) no-repeat center;background-size: 27px auto;}
 .snsLogin .typeApple {background:#fff url(../img/layout/ico_apple.svg) no-repeat center;background-size: 53px auto;border:1px solid #000}
+
+
+.myInfo .seller {display:flex;align-items: center;gap:10px;}
+.myInfo .btn {margin-top:10px;}
+.myInfo .seller .profile {border-radius: 50%;width:50px;height:50px;}
+.myInfo .seller .profile img {width:100%;height:100%;object-fit: cover;}
+.myInfo .seller .name {font-weight: 600;}
+
+.myInfoList .tabList {position:relative;display:flex;align-content: center;margin-bottom: 30px;width:calc(100% + 30px);margin-left:-15px;}
+.myInfoList .tabList>li {flex:1;text-align: center;border-bottom: 1px solid var(--color-gray-lv4);}
+.myInfoList .tabList>li.on {border-bottom: 2px solid #2168F5;;}
+.myInfoList .tabList>li.on>a {font-weight: 600;}
+.myInfoList .tabList>li>a {display:block;padding:5px 15px;}
+
+.profile_modify {display:flex;align-items: center;justify-content: center;}
+.profile_modify .btn {margin-top:10px;}
+.profile_modify .profile {position:relative;border-radius: 50%;width:85px;height:85px;}
+.profile_modify .profile .modify {position: absolute;bottom:-5px;right:-5px;width:30px;height:30px;background:var(--color-gray-lv2) url(../img/layout/ico_camera_gray.svg) no-repeat center;border-radius: 50%;background-size: 15px auto;border:2px solid #fff;}
+.profile_modify .profile img {width:100%;height:100%;object-fit: cover;}
+.profile_modify .name {font-weight: 600;}
+
+.inputWrap.edit {display:flex;align-items: center;gap:7px;}
+.inputWrap.edit .btn_edit {width:85px;height:50px;border-radius: 5px;background:#000;color:#fff;display:flex;align-items: center;justify-content: center;font-size: 16px;}
+.inputWrap.edit>input {display:flex;}
+
+.connectSNS>ul>li>a {display:flex;justify-content: space-between;align-items: center;padding:10px 0;}
+.connectSNS>ul>li>a span {font-size: 14px;padding-right: 15px;background: url(../img/layout/ico_arrR_go.svg) no-repeat right 0 top 50%;background-size: 12px auto;}
+.connectSNS>ul>li>a.kakao .title {padding-left:30px;position:relative;font-size: 15px;font-weight: 600;}
+.connectSNS>ul>li>a.kakao .title:before {content:'';display:block;width:20px;height:20px;border-radius:50%;position:absolute;left:0;top:0;background:#FEE500 url(../img/layout/kakao_s.svg) no-repeat center;background-size: 12px auto;}
+.connectSNS>ul>li>a.apple .title {padding-left:30px;position:relative;font-size: 15px;font-weight: 600;}
+.connectSNS>ul>li>a.apple .title:before {content:'';display:block;width:20px;height:20px;border-radius:50%;position:absolute;left:0;top:0;background:#fff url(../img/layout/ico_apple.svg) no-repeat center;background-size: 25px auto;border:1px solid #111}

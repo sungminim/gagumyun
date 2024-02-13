@@ -34,7 +34,7 @@ body {position:relative;overflow-x: hidden;}
 #dock .dockMenu>a.on .dock_tit {color:#111;font-weight: 600;}
 
 #btnDock {position:fixed;bottom:0;left:0;right:0;z-index: 99;display:flex;height:72px;align-items: center;padding:10px 16px;box-sizing: border-box;border-top:1px solid var(--color-gray-lv4);background:#fff;}
-#btnDock .btnArea {display:flex;width:100%;font-size: 0;gap:15px;align-items: center;}
+#btnDock .btnArea {display:flex;width:100%;font-size: 0;gap:7px;align-items: center;}
 #btnDock .btnArea .btnHeart {width:30px;height:30px;background:url(../common/img/layout/btn_heart.svg) no-repeat center;}
 #btnDock .btnArea .btnHeart.on {background-image:url(../common/img/layout/btn_heart_on.svg)}
 #btnDock .btnArea .btnHeart+.baseBtn {flex:1;}
