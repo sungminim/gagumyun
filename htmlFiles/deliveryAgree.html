@@ -41,8 +41,8 @@
         <!-- { 상품상세 헤더 -->
         <div id="header">
             <div class="header">
-                <h1 class="scHdn">거래 신청하기</h1>
-                <a href="talkDetail.html" class="go_prev">거래 신청하기</a>
+                <h1 class="scHdn">거래 수락하기</h1>
+                <a href="talkDetail.html" class="go_prev">거래 수락하기</a>
             </div>
         </div>
         <!-- 메인용 헤더 } -->
@@ -71,22 +71,133 @@
                                 </div>
                             </div>
                             <div class="division">
-                                <b class="headLine4">거래 희망 일시</b>
+                                <b class="headLine4">배송 희망 일시</b>
                                 <div class="writeList_v">
                                     <ul>
                                         <li>
                                             <div class="formInput">
-                                                <input type="date" class="inputBase" title="날짜를 선택하세요" data-placeholder="YYYY-MM-DD" required>
+                                                <em class="guide">날짜</em>
+                                                <div class="inputWrap">
+                                                    <input type="text" class="inputBase" title="배송 희망 일시" value="2024.12.31 (화)" disabled>
+                                                </div>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="formInput">
-                                                <select name="" id="" class="selectBase">
-                                                    <option value="">10:00</option>
-                                                </select>
+                                                <em class="guide">날짜</em>
+                                                <div class="inputWrap">
+                                                    <input type="text" class="inputBase" title="배송 희망 일시" value="10:00" disabled>
+                                                </div>
                                             </div>
                                         </li>
                                     </ul>
+                                </div>
+                            </div>
+                            <div class="division">
+                                <b class="headLine4">배송지</b>
+                                <div class="writeList_v">
+                                    <ul>
+                                        <li>
+                                            <div class="formInput">
+                                                <em class="guide">이름</em>
+                                                <div class="inputWrap">
+                                                    <input type="text" class="inputBase" title="이름을 입력하세요" placeholder="홍길동">
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="formInput">
+                                                <em class="guide">휴대폰번호</em>
+                                                <div class="inputWrap">
+                                                    <input type="text" class="inputBase" title="휴대폰번호 입력하세요" placeholder="010-oooo-oooo">
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="formInput">
+                                                <em class="guide">주소</em>
+                                                <div class="inputWrap">
+                                                    <input type="text" class="inputBase" title="휴대폰번호 입력하세요" placeholder="">
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="formInput">
+                                                <em class="guide">상세주소</em>
+                                                <div class="inputWrap">
+                                                    <input type="text" class="inputBase" title="휴대폰번호 입력하세요" placeholder="">
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="formInput">
+                                                <em class="guide">배송 메세지</em>
+                                                <div class="inputWrap">
+                                                    <input type="text" class="inputBase" title="배송 메세지를 입력하세요" placeholder="벨 누르지 말고 앞에 놔주세요" >
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="division">
+                                <b class="headLine4">최종결제금액</b>
+                                <div class="paymentArea">
+                                    <div class="payment">
+                                        <p class="tit">상품가격</p>
+                                        <p class="price">99,999,999원</p>
+                                    </div>
+                                    <div class="payment">
+                                        <p class="tit">배송비
+                                            <button type="button" class="btn_help" onclick="ui.LayerPop.Show('#pop_delivery');"><span class="scHdn">도움말</span></button>
+                                        </p>
+                                        <p class="price">50,000원</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="division">
+                                <b class="headLine4">결제 방법</b>
+                                <div class="paymentInfo">
+                                    <ul>
+                                        <li class="full">
+                                            <button type="button">신용&middot;체크카드</button>
+                                        </li>
+                                        <li>
+                                            <button type="button">
+                                                네이버페이
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button type="button">
+                                                카카오페이
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button type="button">
+                                                페이코
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button type="button">
+                                                토스페이
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button type="button">
+                                                가상계좌
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button type="button">
+                                                휴대폰
+                                            </button>
+                                        </li>
+                                    </ul>
+
+                                    <select name="" id="" class="selectBase">
+                                        <option value="">카드사 선택</option>
+                                    </select>
+                                    <a href="#none" class="txtBody2 linkTxt">신용카드 무이자 할부 안내</a>
                                 </div>
                             </div>
                         </div>
@@ -459,7 +570,7 @@
                 </label>
             </div>
             <div class="btnArea">
-                <a href="../index.html" class="baseBtn"><span>거래 신청하기</span></a>
+                <a href="../index.html" class="baseBtn"><span>배송 신청하기</span></a>
             </div>
             <p class="txtBody3">(주)가구면은 통신판매중개자로서 거래당사자가 아니며, 판매자가 등록한 상품정보 및 거래에 대해 (주)가구면은 일체 책임을 지지 않습니다.</p>
         </aside>

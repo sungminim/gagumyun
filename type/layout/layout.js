@@ -62,18 +62,6 @@ var typeLayout = {
 				$("#btn_top").fadeOut()
 			}
 
-			if(typeLayout.val.conts_loc + $(window).innerHeight() > $("#footer").offset().top + 75){
-				// $("#btn_top").css({
-				// 	"position" : "absolute",
-				// 	"bottom" : "16px",
-				// });
-			} else{
-				// $("#btn_top").css({
-				// 	"position" : "fixed",
-				// 	"bottom" : "92px",
-				// });
-			}
-
 			var stickyBtmWrap = $('body .stickyBtm_wrap');
 			var topBtn = $('body .topBtn');
 

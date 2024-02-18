@@ -12,6 +12,7 @@
     <script type="text/javascript" src="../type/common/js/jquery.tmpl.js"></script>
 
 
+
     <!-- jqueryAlert -->
     <link rel="stylesheet" href="../type/common/js/jqueryalert.css"/>
     <script src="../type/common/js/jqueryalert.js"></script>  
@@ -36,8 +37,8 @@
         <!-- { 상품상세 헤더 -->
         <div id="header">
             <div class="header">
-                <h1 class="scHdn">아이디 찾기</h1>
-                <a href="javascript:history.back();" class="go_prev">아이디 찾기</a>
+                <h1 class="scHdn">비밀번호 변경</h1>
+                <a href="javascript:history.back();" class="go_prev">비밀번호 변경</a>
             </div>
         </div>
         <!-- 메인용 헤더 } -->
@@ -49,28 +50,30 @@
     
                     <div class="findID">
 
-                        <div class="notiTxt">
-                            <b class="headLine3">
-                                <span class="c_Point">010-9999-9888</span>에 <br>
-                                인증번호를 보냈어요
-                            </b>
-                        </div>
                         <div class="writeList_v">
+                            <div class="notiTxt">
+                                <b class="headLine3">
+                                    휴대폰 번호를 입력해 주세요
+                                </b>
+                            </div>
                             <ul>
                                 <li>
-                                    <div class="formInput typeTime">
-                                        <em class="guide">인증번호</em>
+                                    <div class="formInput">
+                                        <em class="guide">휴대폰 번호</em>
                                         <div class="inputWrap">
-                                            <input type="text" class="inputBase" title="인증번호를 입력하세요">
-
-                                            <p class="time">
-                                                02:59
-                                            </p>
+                                            <input type="text" class="inputBase" title="전화번호를 입력하세요">
                                         </div>
                                     </div>
                                 </li>
+                                <li>
+                                    <div class="formInput idNumber">
+                                        <em class="guide">통신사</em>
+                                        <select name="" id="" class="selectBase">
+                                            <option value="">SKT</option>
+                                        </select>
+                                    </div>
+                                </li>
                             </ul>
-                            <a href="#none" class="txtLink_s">인증번호 재발송</a>
                         </div>
                     </div>
                     
@@ -83,7 +86,7 @@
         <!-- { 독바 (상세용) -->
         <aside id="btnDock">
             <div class="btnArea">
-                <a href="#none" class="baseBtn"><span>확인</span></a>
+                <a href="#none" class="baseBtn"><span>다음</span></a>
             </div>
         </aside>
         <!-- 독바 } -->
