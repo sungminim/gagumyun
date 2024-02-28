@@ -267,7 +267,9 @@ input[type='date']:valid::before {display: none;}
 .imgDetail .img>a {display:block;position:relative;font-size: 0;}
 .imgDetail .img>a>img {position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:100%;height:100%;max-width:unset;object-fit: cover;}
 
-
+/* .typeProductDetail #header .header .go_prev {background-image:url(../../common/img/layout/ico_prev_white.svg);color:#fff;} */
+.typeProductDetail #container {padding-top:56px !important}
+#header .utilArea .btn_share {background-image:url(../../common/img/layout/ico_inbox.svg) !important;}
 
 .pop_wrap.imgFullView {background-color:rgba(0,0,0,0.8) !important;}
 .imgFullView .popLayout {background: none;max-width: 100%;width:100%;overflow: hidden;}
