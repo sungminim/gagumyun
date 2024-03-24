@@ -282,7 +282,7 @@ var ui = {
 				var accordionItem = $(this);
 				var accordionBtn = accordionItem.find(".AccordionBtn");
 				if (accordionItem.hasClass("on")) {
-					accordionBtn.attr({ "aria-expanded": true, "title": "Ȯ���" });
+					accordionBtn.attr({ "aria-expanded": true});
 				} else {
 					accordionBtn.attr("aria-expanded", false).removeAttr("title");
 				}
@@ -298,7 +298,7 @@ var ui = {
 				$(target).parents("li").find(".AccordionBtn").removeAttr("title").attr("aria-expanded", false);
 			} else {
 				$(target).parents("li").addClass("on").find(".AccordionCont").slideDown(300);
-				$(target).parents("li").find(".AccordionBtn").attr({ "aria-expanded": true, "title": "Ȯ���" });
+				$(target).parents("li").find(".AccordionBtn").attr({ "aria-expanded": true });
 	
 				ui.touchDim();
 			}
