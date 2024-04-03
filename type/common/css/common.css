@@ -494,7 +494,7 @@ textarea:focus {border:1px solid var(--color-blue);outline:none;}
 .popLayout .btnArea {padding-bottom: 6px;}
 
 .pop_wrap.bottomSheet {align-items: flex-end;}
-.pop_wrap.bottomSheet .btn_popX {top:25px;right:0;}
+.pop_wrap.bottomSheet .btn_popX {top:25px;right:20px;}
 
 .pop_wrap.bottomSheet .popLayout {position:relative;width:100%;max-width:100% !important;border-bottom-left-radius: 0;border-bottom-right-radius: 0;padding-top: 30px;padding-left:0;padding-right:0;max-height: 80vh;;}
 .pop_wrap.bottomSheet .popLayout .popTit {padding-bottom:20px;padding-top:20px}
