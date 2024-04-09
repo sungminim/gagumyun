@@ -231,6 +231,9 @@ input[type='date']:valid::before {display: none;}
 
 #login_dock {position:fixed;bottom:0;left:0;right:0;z-index: 99;display:flex;flex-direction: column;padding:10px 15px 15px 15px;box-sizing: border-box;background:#fff;}
 #login_dock .btnArea {display:flex;width:100%;font-size: 0;gap:15px;align-items: center;margin-top:10px;flex-direction: column;flex-wrap: wrap;}
+#login_dock .baseBtn.apple {background:#111;}
+#login_dock .baseBtn.apple>.base {color:#fff;}
+#login_dock .baseBtn.apple i {width:17px;margin-right:7px;position:relative;top:1px;}
 
 #pop_login {}
 #pop_login .popInnerCont {padding-bottom: 40px;}
@@ -339,7 +342,34 @@ input[type='date']:valid::before {display: none;}
 .lineList_v .txtInfo>span>em.data{color:var(--color-gray-lv7);}
 .lineList_v .txtInfo + .txtInfo{margin-top:7px;}
 
+.contGroup .division .headLine3 {margin-bottom: 20px;word-break: keep-all;}
+.contGroup .division .headLine5 {margin-bottom: 10px;word-break: keep-all;margin-top:25px;}
+.contGroup .division .headLine5+.txtBody1 {margin-top:0 !important;}
+.contGroup .division .txtBody1 {word-break: keep-all;font-weight: 500;}
+.contGroup .division .txtBody1~.txtBody1 {margin-top:20px;}
 
+.conpanyInfo .btnArea {margin-top:30px;}
+.conpanyInfo .contGroup .division .headLine5 {position:relative;padding-left:10px;}
+.conpanyInfo .contGroup .division .headLine5:before {content:'';display:block;width:4px;height:4px;border-radius: 50%;background:var(--color-blue);position: absolute;left:0;top:8px;}
+footer {position:relative;max-width: var(--layout-size);width:100%;padding:30px 15px 35px 15px;margin:0 auto;background:#F2F3F5;} /* 0327 */
+
+footer .f_link {margin-bottom: 20px;}
+footer .f_link .f_menu {display:flex;align-items: center;flex-wrap: wrap;}
+footer .f_link .f_menu>li {position:relative;display:flex;align-items: center;}
+footer .f_link .f_menu>li:first-child>a {padding-left:0;}
+footer .f_link .f_menu>li>a {padding:0 17px;font-size:16px;color:var(--color-black);} 
+footer .f_link .f_menu>li+li:before {content:'';display:block;width:1px;height:16px;background:rgba(0,0,0,0.3);}
+footer .f_link .f_menu>li.point>a {font-weight: 700;}
+
+footer address p {font-size: 15px;color:#666;line-height: 20px;font-style: normal;}
+footer address p b,
+footer address p span {display:block;font-size: 13px;word-break: keep-all;}
+footer address p span {font-size:13px;}
+footer address p>b+span {margin-top:12px;}
+
+footer .f_logo {display:flex;margin-top:24px;align-items: center;gap:10px;}
+footer .f_logo .cq-net {width:104px;}
+footer .f_logo .accessibility {width:64px;}
 
 
 .iconB{position:relative;width:18px;height:18px;display:inline-block;vertical-align:middle;}
