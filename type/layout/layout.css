@@ -8,8 +8,8 @@ body {position:relative;overflow-x: hidden;}
 #header {position:fixed;top:0;left:0;width:100%;height:56px;margin:0 auto;border-bottom:1px solid#efefef;z-index: 999;background:#fff;}
 #header .header {position:relative;display:flex;align-items: center;height:100%;padding:0 15px;max-width: 768px;margin:0 auto;align-items: center;}
 #header .header .logoArea {display:block;font-size: 0;}
-#header .header .logoArea>a {display:block;}
-#header .header .logoArea>a img {height:22px;}
+#header .header .logoArea>a {display:block;font-size: 0;padding-top:5px;}
+#header .header .logoArea>a img {height:30px;}
 #header .utilArea {position:absolute;display:flex;align-items: center;height:100%;right:15px;}
 #header .utilArea .btn_sch {position:relative;display:block;width:24px;height:24px;background:url(../common/img/layout/ico_search.svg) no-repeat center;margin-right: 12px;}
 #header .utilArea .btn_alarm {position:relative;display:block;width:24px;height:24px;background:url(../common/img/layout/ico_alarm.svg) no-repeat center}
