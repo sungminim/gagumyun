@@ -9,7 +9,7 @@
 .product_list>li .info .made {color:#555;font-size:12px;margin-bottom:0px;}
 .product_list>li .info .tit {font-size:14px;font-weight: 600;line-height: 18px;}
 .product_list>li .info .priceArea {display:flex;margin-top:3px;}
-.product_list>li .info .priceArea .rate {color:#2168F5;font-size:15px;font-weight: 600;}
+.product_list>li .info .priceArea .rate {color:#004537;font-size:15px;font-weight: 600;}
 .product_list>li .info .price_before {margin-bottom:-7px;margin-top:2px;color:#b7b7b7;font-size:12px;text-decoration:line-through;}
 .product_list>li .info .price {font-size:15px;font-weight:600;margin-right: 5px;}
 .product_list>li .thumnail .btn_like {position: absolute;top:10px;right:10px;width:25px;height:25px;background:url(../../common/img/layout/btn_heart_w.svg) no-repeat center;background-size: 25px auto;z-index: 5;}
@@ -29,7 +29,7 @@
 .productDetail .productInfo .made {color:#555;font-size:13px;margin-bottom:5px;}
 .productDetail .productInfo .tit {font-size:18px;font-weight: 600;line-height: 18px;}
 .productDetail .productInfo .priceArea {display:flex;margin-top:3px;}
-.productDetail .productInfo .priceArea .rate {color:#2168F5;font-size:16px;font-weight: 600;}
+.productDetail .productInfo .priceArea .rate {color:#004537;font-size:16px;font-weight: 600;}
 .productDetail .productInfo .price_before {margin-bottom:-7px;margin-top:5px;color:#b7b7b7;font-size:13px;text-decoration:line-through;}
 .productDetail .productInfo .price {font-size:16px;font-weight:600;margin-right: 5px;}
 .productDetail .productInfo .tagArea {display:flex;gap:5px;margin-top:10px;flex-wrap: wrap;}
@@ -159,7 +159,7 @@
 .productInfo .made {color:#555;font-size:12px;margin-bottom:0px;}
 .productInfo .tit {font-weight: 600;line-height: 18px;}
 .productInfo .priceArea {display:flex;margin-top:3px;}
-.productInfo .priceArea .rate {color:#2168F5;font-size:15px;font-weight: 600;}
+.productInfo .priceArea .rate {color:#004537;font-size:15px;font-weight: 600;}
 .productInfo .price_before {margin-bottom:-7px;margin-top:2px;color:#b7b7b7;font-size:12px;text-decoration:line-through;}
 .productInfo .price {font-size:15px;font-weight:600;margin-right: 5px;}
 
@@ -180,6 +180,10 @@
 #chatDock .btnSend {display:block;width:25px;height:25px;background:url(../img/layout/ico_send.svg) no-repeat center;position: relative}
 
 .chatArea {padding-top:30px;}
+.chatArea .chatWrap {display:flex;flex-direction: column-reverse;overflow-y: auto;height:535px;-ms-overflow-style: none; /* IE and Edge */scrollbar-width: none; /* Firefox */}
+.chatArea .chatWrap::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
+}
 .chatArea .msgContainer {display:flex;flex-direction: column;}
 .chatArea .date {text-align: center;font-size: 13px;color:var(--color-gray-lv8);margin-bottom: 20px;}
 .chatArea .msg {display:flex;width:100%;gap: 5px;align-items: end;flex-wrap: wrap;}
@@ -187,7 +191,7 @@
 .chatArea .msg.sent+.msg.sent {margin-top:10px;}
 .chatArea .msg.received+.msg.received {margin-top:10px;}
 .chatArea .msg.sent {justify-content: end;flex-direction: row-reverse;}
-.chatArea .msg.sent .chat {background:#2168F5;color:#fff;}
+.chatArea .msg.sent .chat {background:#004537;color:#fff;}
 .chatArea .msg .chat {padding:5px 15px;border-radius: 20px;background:var(--color-gray-lv3);max-width: 75%;display:flex;align-items: center;}
 .chatArea .msg .info span {display:block;font-size: 12px;color:var(--color-gray-lv8);}
 .chatArea .msg .msgImg {font-size: 0;padding:5px 0;}
@@ -260,7 +264,7 @@ input[type='date']:valid::before {display: none;}
 
 .myInfoList .tabList {position:relative;display:flex;align-content: center;margin-bottom: 30px;width:calc(100% + 30px);margin-left:-15px;}
 .myInfoList .tabList>li {flex:1;text-align: center;border-bottom: 1px solid var(--color-gray-lv4);}
-.myInfoList .tabList>li.on {border-bottom: 2px solid #2168F5;;}
+.myInfoList .tabList>li.on {border-bottom: 2px solid #004537;;}
 .myInfoList .tabList>li.on>a {font-weight: 600;}
 .myInfoList .tabList>li>a {display:block;padding:5px 15px;}
 
@@ -370,6 +374,13 @@ footer address p>b+span {margin-top:12px;}
 footer .f_logo {display:flex;margin-top:24px;align-items: center;gap:10px;}
 footer .f_logo .cq-net {width:104px;}
 footer .f_logo .accessibility {width:64px;}
+
+.list_right {margin-top:15px;margin-bottom: 20px;}
+.list_right li {display:flex;align-items: flex-start;}
+.list_right li+li {margin-top:15px;}
+.list_right li .tit {font-size: 18px;font-weight: 700;}
+.list_right i {width:43px;height:43px;background: rgba(0, 69, 55, 0.2);border-radius: 50%;display:flex;align-items: center;justify-content: center;margin-right: 15px;;}
+.list_right .txtBody1 {color:#666}
 
 
 .iconB{position:relative;width:18px;height:18px;display:inline-block;vertical-align:middle;}

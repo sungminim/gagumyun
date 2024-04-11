@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimal-ui">
+    <title>가구면</title>
+
+    <script type="text/javascript" src="../type/common/js/jquery-3.5.1.min.js"></script>
+
+
+    <script type="text/javascript" src="../type/common/js/jquery.form.js"></script>
+    <script type="text/javascript" src="../type/common/js/jquery.tmpl.js"></script>
+
+
+    <!-- jqueryAlert -->
+    <link rel="stylesheet" href="../type/common/js/jqueryalert.css"/>
+    <script src="../type/common/js/jqueryalert.js"></script>  
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="../type/common/js/swiper/swiper.css"/> <!-- swiper -->
+    <script src="../type/common/js/swiper/swiper.js"></script>  <!-- swiper -->
+
+    <link rel="stylesheet" type="text/css" href="../type/common/css/common.css" /><!-- reset -->
+    <link rel="stylesheet" type="text/css" href="../type/common/css/contents.css" />
+    
+    
+    <script type="text/javascript" src="../type/common/js/layout.js"></script><!-- 공통_layout -->
+    
+    <link rel="stylesheet" type="text/css" href="../type/layout/layout.css" /><!-- layout -->
+    <script type="text/javascript" src="../type/layout/layout.js"></script><!-- layout -->
+</head>
+
+<body> 
+
+    <div class="root typeSub"> <!-- 메인 : typeMain, 서브: typeSub, 상품상세 : typeProductDetail -->
+        <!-- { 상품상세 헤더 -->
+        <div id="header">
+            <div class="header">
+                <h1 class="scHdn">회원가입</h1>
+                <a href="javascript:history.back();" class="go_prev">회원가입</a>
+            </div>
+        </div>
+        <!-- 메인용 헤더 } -->
+    
+        <!-- { 본문 -->
+        <div id="container">
+            <div id="contents">
+                <article>
+    
+                    <div class="join">
+
+                        <!-- 로딩 영역 (display:none, block으로 제어)-->
+                        <div class="loadingWrap" style="display:block;">
+                            <div class="loading">
+                                <div class="itemWrap">
+                                    <div class="item"></div>
+                                    <div class="item"></div>
+                                    <div class="item"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //로딩 영역 -->
+
+                        <div class="notiTxt">
+                            <b class="headLine3">
+                                안전한 거래를 위해 약관에 동의 후 <br>
+                                가입을 완료해 주세요
+                            </b>
+                        </div>
+                    
+                        <div class="agreeBox">
+
+                            <div class="agreeAll">
+                                <label class="inputBox">
+                                    <input type="checkbox" name="agree" id="agree_all">
+                                    <span class="data">전체 동의하기</span>
+                                </label>
+                            </div>
+
+                            <div class="agreeList">
+                                <label class="inputBox">
+                                    <input type="checkbox" name="agree" id="agree1">
+                                    <span class="data">(필수) 이용약관 동의</span>
+                                    <button type="button" class="txtLink_s" onclick="ui.LayerPop.Show('#pop_agrre_info1');">보기</button>
+                                </label>
+                                <label class="inputBox">
+                                    <input type="checkbox" name="agree" id="agree2">
+                                    <span class="data">(필수) 개인정보 처리방침 동의</span>
+                                    <button type="button" class="txtLink_s" onclick="ui.LayerPop.Show('#pop_agrre_info2');">보기</button>
+                                </label>
+                                <label class="inputBox">
+                                    <input type="checkbox" name="agree" id="agree3">
+                                    <span class="data">(선택) 마케팅 수신 동의</span>
+                                    <button type="button" class="txtLink_s" onclick="ui.LayerPop.Show('#pop_agrre_info3');">보기</button>
+                                </label>
+                                <div class="smallAgree">
+                                    <label class="inputBox small">
+                                        <input type="checkbox" name="agree2" id="agree2_1">
+                                        <span class="data">앱푸시</span>
+                                    </label>
+                                    <label class="inputBox small">
+                                        <input type="checkbox" name="agree2" id="agree2_2">
+                                        <span class="data">문자</span>
+                                    </label>
+                                    <label class="inputBox small">
+                                        <input type="checkbox" name="agree2" id="agree2_3">
+                                        <span class="data">이메일</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </article>
+                <a href="#none" id="btn_top" class="topBtn"><span class="scHdn">상단바로가기</span></a>
+    
+            </div>
+        </div>
+        <!-- 본문 } -->
+    
+        <!-- { 독바 (상세용) -->
+        <aside id="btnDock">
+            <div class="btnArea">
+                <a href="#none" class="baseBtn"><span>확인</span></a>
+            </div>
+        </aside>
+        <!-- 독바 } -->
+    </div>
+
+    <!-- Custom Select -->
+	<script id="cutomSelectBoxTemplate" type="text/x-jquery-tmpl">
+		<div class="pop_wrap bottomSheet typeSelect">
+			<section class="popLayout popLayer">
+				<div class="popConts">
+					<div class="popInner limit">
+						<!-- 팝업 내용 입력-->
+						<div class="txtG">
+							<button type="button" class="btn_popX btn_popClose"><span class="base txtHidden">닫기</span></button>
+							<h2 class="popTit"></h2>
+							<div class="popInnerCont selectCont">
+								<!-- 셀렉트 박스 옵션 -->
+								<div class="optList">
+								</div>
+								<!-- 셀렉트 박스 옵션 -->
+							</div>
+						</div>
+						<!-- //팝업 내용 입력 -->
+					</div>
+				</div>
+			</section>
+		</div>
+	</script>
+</body>
+</html>
