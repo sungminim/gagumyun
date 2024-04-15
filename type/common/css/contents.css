@@ -75,9 +75,16 @@
 .groupCont .division .headLine4 .txtLink_s {position:absolute;right:0;top:50%;transform:translateY(-50%);text-decoration: underline;font-weight: 400;}
 .groupCont .division .txtBody1+.txtBody1 {margin-top:7px;}
 .groupCont .division .txtBody1+.headLine5 {margin-top:15px;}
+.groupCont .division .txtList+.headLine5 {margin-top:15px;}
 .groupCont .division .headLine5+.contTable {margin-top:10px;}
+.groupCont .division .txtList+.txtBody1 {margin-top:10px;}
+.groupCont .division .headLine5+.txtList {margin-top:10px;}
+.groupCont .division .headLine5+.txtBody1 {margin-top:10px;}
 .groupCont .division .contTable+.headLine5 {margin-top:25px;}
 .groupCont .division .contTable+.txtBody1 {margin-top:25px;}
+.groupCont .division .txtBody1+.txtList {margin-top:10px;}
+.groupCont .division .txtBody1+.contTable {margin-top:10px;}
+.underTxt {color:var(--color-blue);text-decoration: underline !important;display:inline-block;margin-top:10px;}
 
 .totalSch .tagArea {display:flex;gap:10px;flex-wrap: wrap;}
 .totalSch .tagArea>a {border-radius: 30px;padding:5px 15px;text-align: center;background:var(--color-gray-lv2);color:var(--color-gray-lv7)}
@@ -166,8 +173,6 @@
 .dealInfo {position:sticky;top:0;left:0;}
 .dealInfo .chat {background: #81c147 !important;color: #fff;font-weight: 500;padding: 10px 20px;border-radius: 20px;}
 .dealInfo .btn {width: 100%;display: flex;gap: 5px;}
-
-
 
 #chatDock {display:flex;align-items: center;}
 #chatDock .fileImg {position:relative;width:25px;height:25px;}

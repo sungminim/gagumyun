@@ -16,6 +16,8 @@ body {position:relative;overflow-x: hidden;}
 #header .utilArea .btn_share {position:relative;display:block;width:24px;height:24px;background:url(../common/img/layout/ico_share_w.svg) no-repeat center}
 #header .utilArea .btn_util {position:relative;display:block;width:20px;height:20px;background:url(../common/img/layout/icon_dotUtil.svg) no-repeat center}
 #header .header .go_prev {min-width:20px;min-height:20px;font-size:18px;font-weight: 700;padding-left:30px;background:url(../common/img/layout/ico_prev.svg) no-repeat left 0 top 50%}
+#header .header .pageTit {font-size:18px;font-weight: 700;display:block;text-align: center;margin: 0 auto;}
+#header .header .go_prev.close {background:url(../common/img/layout/ico_close.svg) no-repeat left 0 top 50%}
 #header .header .go_close {min-width:20px;min-height:20px;font-size:18px;font-weight: 700;background:url(../common/img/layout/ico_close.svg) no-repeat left 0 top 50%}
 #header .header .searchBar {position:relative;flex:1;font-size:0}
 #header .header .searchBar .btn_sch {position:absolute;display:block;width:22px;height:22px;background:url(../common/img/layout/ico_search.svg) no-repeat center;background-size: 22px auto;right:15px;top:6px;}
