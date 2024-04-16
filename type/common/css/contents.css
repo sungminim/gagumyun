@@ -185,10 +185,7 @@
 #chatDock .btnSend {display:block;width:25px;height:25px;background:url(../img/layout/ico_send.svg) no-repeat center;position: relative}
 
 .chatArea {padding-top:30px;}
-.chatArea .chatWrap {display:flex;flex-direction: column-reverse;overflow-y: auto;height:535px;-ms-overflow-style: none; /* IE and Edge */scrollbar-width: none; /* Firefox */}
-.chatArea .chatWrap::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, Opera*/
-}
+.chatArea .chatWrap {max-height: calc(100vh - 340px);overflow-y: auto;}
 .chatArea .msgContainer {display:flex;flex-direction: column;}
 .chatArea .date {text-align: center;font-size: 13px;color:var(--color-gray-lv8);margin-bottom: 20px;}
 .chatArea .msg {display:flex;width:100%;gap: 5px;align-items: end;flex-wrap: wrap;}

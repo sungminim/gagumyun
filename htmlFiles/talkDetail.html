@@ -78,6 +78,7 @@
                                  <div class="btn">
                                     <a href="#none" class="baseBtn small gray"><span class="base">거절하기</span></a>
                                     <a href="#none" class="baseBtn small"><span class="base">수락하기</span></a>
+
                                  </div>
                             </div>
                         </div>
@@ -160,6 +161,28 @@
                                          </div>
                                     </div>
                                 </div>
+
+                                <!-- 0417 추가 -->
+                                <style>
+                                    body {overflow-y:hidden}
+                                </style>
+
+                                <script>
+                                    $(function(){
+                                        // 초기에 채팅방에 스크롤이 있으면 함수 실행
+                                        var scrollWrap = $('.chatWrap');
+                                            if (scrollWrap[0].scrollHeight > scrollWrap.innerHeight()) {
+                                            scrollUI();
+                                        }
+                                    
+                                        // scroll 함수 (메시지 수신, 발신 시 함수 실행)
+                                        function scrollUI() {
+                                            var chatUl = $('.chatWrap');
+                                            chatUl.scrollTop(chatUl[0].scrollHeight);
+                                        }
+                                    })
+                                </script>
+                                <!-- //0417 추가 끝 -->
                             </div>
                         </div>
                     </div>
@@ -181,7 +204,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <button type="button" class="btn_popX btn_popClose"><span class="base txtHidden">닫기</span></button>
                         </section>
                     </div>
                     
