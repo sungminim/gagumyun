@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimal-ui">
+    <title>가구면</title>
+
+    <script type="text/javascript" src="../type/common/js/jquery-3.5.1.min.js"></script>
+
+
+    <script type="text/javascript" src="../type/common/js/jquery.form.js"></script>
+    <script type="text/javascript" src="../type/common/js/jquery.tmpl.js"></script>
+
+
+
+    <!-- jqueryAlert -->
+    <link rel="stylesheet" href="../type/common/js/jqueryalert.css"/>
+    <script src="../type/common/js/jqueryalert.js"></script>  
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="../type/common/js/swiper/swiper.css"/> <!-- swiper -->
+    <script src="../type/common/js/swiper/swiper.js"></script>  <!-- swiper -->
+
+    <link rel="stylesheet" type="text/css" href="../type/common/css/common.css" /><!-- reset -->
+    <link rel="stylesheet" type="text/css" href="../type/common/css/contents.css" />
+    
+    
+    <script type="text/javascript" src="../type/common/js/layout.js"></script><!-- 공통_layout -->
+    
+    <link rel="stylesheet" type="text/css" href="../type/layout/layout.css" /><!-- layout -->
+    <script type="text/javascript" src="../type/layout/layout.js"></script><!-- layout -->
+</head>
+
+<body> 
+
+    <div class="root typeSub"> <!-- 메인 : typeMain, 서브: typeSub, 상품상세 : typeProductDetail -->
+        <!-- { 상품상세 헤더 -->
+        <div id="header">
+            <div class="header">
+                <h1 class="scHdn">게시글 차단 판매자 관리</h1>
+                <a href="javascript:history.back();" class="go_prev">게시글 차단 판매자 관리</a>
+            </div>
+        </div>
+        <!-- 메인용 헤더 } -->
+    
+        <!-- { 본문 -->
+        <div id="container">
+            <div id="contents">
+                <article>
+    
+                    <div class="blockListWrap">
+                        <ul class="blockList">
+                            <li>
+                                <div class="seller">
+                                    <div class="profile">
+                                        <img src="../type/common/img/layout/profile_default.svg" alt="">
+                                    </div>
+                                    <p class="name">타고난 장사꾼님</p>
+                                </div>
+                                <div class="btn">
+                                    <butotn type="button" class="baseBtn gray">
+                                        <span class="base">게시글 차단중</span>
+                                    </butotn>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="seller">
+                                    <div class="profile">
+                                        <img src="../type/common/img/layout/profile_default.svg" alt="">
+                                    </div>
+                                    <p class="name">타고난 장사꾼222님</p>
+                                </div>
+                                <div class="btn">
+                                    <butotn type="button" class="baseBtn">
+                                        <span class="base">게시글 안보기</span>
+                                    </butotn>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="seller">
+                                    <div class="profile">
+                                        <img src="../type/common/img/layout/profile_default.svg" alt="">
+                                    </div>
+                                    <p class="name">타고난 장사꾼님</p>
+                                </div>
+                                <div class="btn">
+                                    <butotn type="button" class="baseBtn gray">
+                                        <span class="base">게시글 차단중</span>
+                                    </butotn>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="seller">
+                                    <div class="profile">
+                                        <img src="../type/common/img/layout/profile_default.svg" alt="">
+                                    </div>
+                                    <p class="name">타고난 장사꾼222님</p>
+                                </div>
+                                <div class="btn">
+                                    <butotn type="button" class="baseBtn">
+                                        <span class="base">게시글 안보기</span>
+                                    </butotn>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </article>
+                <a href="#none" id="btn_top" class="topBtn"><span class="scHdn">상단바로가기</span></a>
+    
+            </div>
+        </div>
+        <!-- 본문 } -->
+    </div>
+
+    <!-- Custom Select -->
+	<script id="cutomSelectBoxTemplate" type="text/x-jquery-tmpl">
+		<div class="pop_wrap bottomSheet typeSelect">
+			<section class="popLayout popLayer">
+				<div class="popConts">
+					<div class="popInner limit">
+						<!-- 팝업 내용 입력-->
+						<div class="txtG">
+							<button type="button" class="btn_popX btn_popClose"><span class="base txtHidden">닫기</span></button>
+							<h2 class="popTit"></h2>
+							<div class="popInnerCont selectCont">
+								<!-- 셀렉트 박스 옵션 -->
+								<div class="optList">
+								</div>
+								<!-- 셀렉트 박스 옵션 -->
+							</div>
+						</div>
+						<!-- //팝업 내용 입력 -->
+					</div>
+				</div>
+			</section>
+		</div>
+	</script>
+</body>
+</html>

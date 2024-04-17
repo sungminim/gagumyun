@@ -38,6 +38,9 @@
                     <a href="#none" class="btn_share">
                         <span class="scHdn">상품검색</span>
                     </a>
+                    <a href="#none" class="btn_more">
+                        <span class="scHdn">더보기</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -163,44 +166,12 @@
                         </div>
                     </div>
                     <!-- 상품 상세 } -->
-                    
-
-                    <script>
-                        $(function(){
-                            // 상품 상세 슬라이더
-                            function initThumSwiper() {
-                                var mThumOption = {
-                                    slidesPerView: '1',
-                                    loop: true,
-                                    pagination: {   //페이징 사용자 설정
-                                        el: ".swiperThumnail .pagination_fraction",   //페이징 태그 클래스 설정 
-                                        type : 'fraction'
-                                    }
-                                    
-                                };
-                                mSimilarSlide = new Swiper('.swiperThumnail', mThumOption);
-                            }
-
-                            initThumSwiper();
-                        })
-                    </script>
                 </article>
                 <a href="#none" id="btn_top" class="topBtn"><span class="scHdn">상단바로가기</span></a>
     
             </div>
         </div>
         <!-- 본문 } -->
-    
-        <!-- { 독바 (상품 상세용) -->
-        <aside id="btnDock">
-            <div class="btnArea">
-                <button type="button" class="btnHeart on"> <!-- 찜하기 누를 시 on 클래스 추가 -->
-                    <span class="scHdn">찜하기</span>
-                </button>
-                <a href="talkDetail.html" class="baseBtn"><span>가구톡하기</span></a>
-            </div>
-        </aside>
-        <!-- 독바 } -->
     </div>
 </body>
 </html>
