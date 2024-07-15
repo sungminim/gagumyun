@@ -52,27 +52,137 @@
                 <article>
     
                     <!-- { 상품 상세 -->
+                      
                     <div class="productDetail">
+
+                        <!-- ********0716 추가********* -->
+                        <script>
+                            $(function () {
+                                // 기본 슬라이더
+                                var options = {};
+
+                                if ($(".swiperThumnail .swiper-slide").length == 1) {
+                                    options = {
+                                        slidesPerView: 1,
+                                        touchRatio: 0,
+                                        centeredSlides: true,
+                                        pagination: {
+                                            el: ".swiperThumnail .pagination_fraction",
+                                            type: "fraction",
+                                        }
+                                    };
+                                } else {
+                                    options = {
+                                        slidesPerView: 1,
+                                        loop: true,
+                                        autoplay: true,
+                                        centeredSlides: true,
+                                        pagination: {
+                                            el: ".swiperThumnail .pagination_fraction",
+                                            type: "fraction",
+                                        },
+                                    };
+                                };
+
+                                var mainVisual = new Swiper(".swiperThumnail", options);
+
+                                 // 전체보기 슬라이더
+                                 function initFullViewSwiper() {
+                                    var mFullViewOption = {
+                                        speed: 0,
+                                        loop: true,
+                                        slidesPerView: '1',
+                                        observer: true,
+                                        observeParents: true,
+                                        pagination: {   //페이징 사용자 설정
+                                            el: ".assetFullView .swiper-pagination",   //페이징 태그 클래스 설정 
+                                            clickable : true,
+                                        }
+                                    };
+                                    mFullViewSwiper = new Swiper('.assetFullView', mFullViewOption);
+                                    
+                                }
+
+                                // 전체보기 클릭 시 첫화면 위치 수정
+                                $(document).on('click', '.productDetail .swiperThumnail .swiper-slide a', function() {
+                                    const assetIndex = $('.swiperThumnail .swiper-slide-active').index();
+                                    initFullViewSwiper();
+                                    
+                                    mFullViewSwiper.slideTo(assetIndex);
+                                });
+                            })
+                        </script>
+
+                        <!-- 상세보기 슬라이더 -->
                         <div class="swiper swiperThumnail">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <img src="../type/common/img/cont/product_thum1.png" alt="">
+                                    <a href="#none" onclick="ui.LayerPop.Show('#detail_pop');">
+                                        <img src="../type/common/img/cont/product_thum1.png" alt="">
+                                    </a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="../type/common/img/cont/product_thum2.png" alt="">
+                                    <a href="#none" onclick="ui.LayerPop.Show('#detail_pop');">
+                                        <img src="../type/common/img/cont/product_thum2.png" alt="">
+                                    </a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="../type/common/img/cont/product_thum1.png" alt="">
+                                    <a href="#none" onclick="ui.LayerPop.Show('#detail_pop');">
+                                        <img src="../type/common/img/cont/product_thum1.png" alt="">
+                                    </a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="../type/common/img/cont/product_thum2.png" alt="">
+                                    <a href="#none" onclick="ui.LayerPop.Show('#detail_pop');">
+                                        <img src="../type/common/img/cont/product_thum2.png" alt="">
+                                    </a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="../type/common/img/cont/product_thum1.png" alt="">
+                                    <a href="#none" onclick="ui.LayerPop.Show('#detail_pop');">
+                                        <img src="../type/common/img/cont/product_thum1.png" alt="">
+                                    </a>
                                 </div>
                             </div>
                             <div class="pagination_fraction"></div>
                         </div>
+
+                        <!-- 전체 팝업 슬라이더 -->
+                        <div class="pop_fullView" id="detail_pop">
+                            <div class="pop_inner">
+                                <div class="swiper assetFullView">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <a href="#none">
+                                                <img src="../type/common/img/cont/product_thum1.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#none">
+                                                <img src="../type/common/img/cont/product_thum2.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#none">
+                                                <img src="../type/common/img/cont/product_thum1.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#none">
+                                                <img src="../type/common/img/cont/product_thum2.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#none">
+                                                <img src="../type/common/img/cont/product_thum1.png" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                            <button type="button" class="icon_popClose btn_popClose"><span class="scHdn">닫기</span></button>
+                        </div>
+
+                        <!-- ********0716 추가 끝********* -->
 
                         <div class="productInfo">
                             <p class="made">플레인모빌리</p>
